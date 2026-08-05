@@ -44,33 +44,6 @@ Pydantic models defining the inputs and outputs across the system.
 
 ---
 
-## 👥 How We Will Collaborate
-
-To work in parallel without blocking each other, we are dividing the backend into two distinct domains. 
-
-### Developer 1: Streaming, Tools & Telemetry
-*   **Focus:** Moving audio fast and building the mock enterprise world.
-*   **Responsibilities:**
-    *   Build the WebSocket/WebRTC endpoints (`app/api/routes/`).
-    *   Integrate Azure STT and TTS streaming (`app/services/audio/`).
-    *   Build the mock API endpoints for CRM and Ticketing.
-    *   Setup tracing and telemetry (Langfuse/OpenTelemetry).
-
-### Developer 2: Cognitive Engine, RAG & State
-*   **Focus:** Building the agent's brain and enforcing business rules.
-*   **Responsibilities:**
-    *   Design the LangGraph state machine (`app/agents/`).
-    *   Build the Intent Detector and Workflow Engine[cite: 1].
-    *   Implement RAG for knowledge retrieval (`app/services/rag/`).
-    *   Write the Python guardrails (`app/policy/`).
-
-### 🤝 Our Synchronization Strategy (The Data Contracts)
-
-We will define **Pydantic Schemas** on Day 1 in `app/schemas/`. This allows us to mock connections between our two domains immediately.
-
-1.  **Contract 1 (Audio <-> Agent):** We will agree on the JSON format for `UserTranscript` (what Dev 1 sends to Dev 2) and `BotResponse` (what Dev 2 sends back to Dev 1).
-2.  **Contract 2 (Agent <-> Tools):** We will define exactly what the input/output schemas look like for the enterprise tools (e.g., `BookEngineerInput(customer_id: str)`). Dev 2 can start having the LLM generate these payloads before Dev 1 finishes the actual mock API.
-
 ## 🚀 Getting Started
 
 1. Copy `.env.example` to `.env` and fill in your API keys (Azure, OpenAI).
