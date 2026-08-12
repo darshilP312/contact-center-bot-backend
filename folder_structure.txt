@@ -1,0 +1,30 @@
+voice-agent-backend/app/
+├── api/
+│   └── routes/
+│       ├── websocket.py           # WebSocket endpoint (audio streaming)
+│       ├── webrtc_signaling.py    # [ADDED] WebRTC SDP/ICE exchange routes
+│       ├── call_logs.py
+│       └── mock_enterprise.py
+│
+├── agents/
+│   ├── graph.py                   # StateGraph setup using Redis Checkpointer
+│   ├── state.py                   # TypedDict state models
+│   ├── prompts.py
+│   └── nodes/
+│       ├── intent_router.py
+│       ├── tool_caller.py
+│       └── synthesizer.py
+│
+├── services/
+│   ├── conversation_service.py    # [ADDED] Core Voice Loop Coordinator (STT -> Agent -> TTS)
+│   ├── audio/
+│   │   ├── stream_manager.py      # [ADDED] Handles audio queues & Barge-in / Interruptions
+│   │   ├── webrtc_manager.py      # [ADDED] PyAV / aiortc media stream processing
+│   │   ├── azure_stt.py           # Continuous recognition STT client
+│   │   └── azure_tts.py           # Streaming synthesizer TTS client
+│   ├── memory/
+│   │   ├── redis_client.py        # Raw Redis key-value operations
+│   │   └── checkpointer.py        # [ADDED] LangGraph Redis Checkpointer instance
+│   └── rag/
+│       └── vector_search.py
+... (tools, schemas, policy, repositories remain unchanged)
