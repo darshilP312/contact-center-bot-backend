@@ -1,0 +1,43 @@
+REFUND POLICY
+
+Effective Date: January 1, 2026
+Document ID: POL-REFUND-001
+
+1. ELIGIBILITY FOR REFUND
+A refund may be requested under the following circumstances:
+- Duplicate or incorrect charge on your bill.
+- Service unavailability: If the service was unavailable for more than 48 continuous hours due to a fault on our part, a pro-rated refund for the affected period will be issued.
+- Overpayment: Any overpayment relative to the applicable plan price.
+- Cancellation within cooling-off period (see Cancellation Policy POL-CANCEL-001).
+
+2. REFUND AMOUNTS AND LIMITS
+- Refunds of up to Rs.10,000 are processed automatically upon verification.
+- Refunds exceeding Rs.10,000 require manager approval and will be processed within 5 business days of approval.
+- Pro-rated refunds are calculated on a daily basis: Monthly charge divided by 30 days.
+
+3. REFUND TIMELINE
+- Credit/debit card: 3-5 business days after approval.
+- UPI / Net banking: 2-3 business days after approval.
+- Cheque: 7-10 business days after approval.
+
+4. HOW TO REQUEST A REFUND
+- AI Contact Centre: Say "I need a refund" and the system will guide you through the process.
+- Phone: Call 1800-XXX-XXXX and speak to a billing specialist.
+- Email: billing@company.com with subject "REFUND REQUEST - [Account Number] - [Invoice Number]"
+
+5. WHAT IS NOT REFUNDABLE
+- Usage-based charges already consumed (data packs, add-on services used).
+- Late payment fees.
+- Physical equipment (routers, modems) unless defective within warranty period.
+- Processing fees for bounced cheques.
+
+6. DISPUTE RESOLUTION
+If your refund request is denied and you disagree with the decision:
+- First: Request a review by a senior billing specialist.
+- Second: File a formal complaint via the grievance portal within 30 days.
+- Third: Escalate to the regulatory authority (TRAI) if unresolved within 30 days of complaint.
+
+7. REFUND STATUS TRACKING
+Track your refund status using the reference number provided at the time of request via:
+- SMS: Send "REFUND [Reference Number]" to 56789
+- Online portal: My Account > Billing > Refund Status

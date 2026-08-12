@@ -1,0 +1,62 @@
+name: technical_support
+description: Diagnose and resolve a connectivity or technical problem.
+entry_step: authenticate
+
+steps:
+  authenticate:
+    goal: Verify the caller identity using their account number or phone.
+    tool: lookup_customer
+    on_success: check_outage
+    on_fail: escalate
+    max_attempts: 2
+
+  check_outage:
+    goal: Rule out a known network outage in the customer's area before running diagnostics.
+    tool: check_outage
+    on_success: run_diagnostics
+    branch:
+      outage_found: create_ticket_outage
+
+  create_ticket_outage:
+    goal: Log the outage-related incident and inform the customer of the ETA.
+    tool: create_ticket
+    tool_args_override:
+      ticket_type: incident
+      priority: high
+      summary: "Network outage reported in customer area"
+    on_success: confirm
+    terminal: false
+
+  run_diagnostics:
+    goal: Attempt automated remote diagnostic checks on customer equipment.
+    tool: run_diagnostics
+    max_attempts: 3
+    on_success: create_ticket
+    on_fail: run_diagnostics
+    on_exhausted: book_engineer
+
+  book_engineer:
+    goal: Schedule a field technician visit when remote diagnostics have failed.
+    tool: book_engineer
+    tool_args_override:
+      priority: high
+    on_success: create_ticket
+    on_fail: escalate
+
+  create_ticket:
+    goal: Record the full interaction and resolution path in the ticketing system.
+    tool: create_ticket
+    tool_args_override:
+      ticket_type: incident
+      priority: medium
+    on_success: confirm
+
+  escalate:
+    goal: Transfer to a live human agent with a complete handoff summary.
+    tool: human_escalation
+    terminal: true
+
+  confirm:
+    goal: Summarise the outcome and next steps clearly to the customer.
+    terminal: true
+    generate_summary: true

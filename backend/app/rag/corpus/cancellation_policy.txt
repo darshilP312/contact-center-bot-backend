@@ -1,0 +1,33 @@
+CANCELLATION POLICY
+
+Effective Date: January 1, 2026
+Document ID: POL-CANCEL-001
+
+1. CANCELLATION WITHIN 30 DAYS (COOLING-OFF PERIOD)
+Customers may cancel their subscription within 30 days of the service activation date without any penalty. A full refund of any advance payment made will be processed within 5-7 business days. This applies to all residential and small business plans.
+
+2. CANCELLATION AFTER 30 DAYS
+After the initial 30-day period, cancellation is subject to the following terms:
+- Monthly plans: Cancel anytime with 30 days written notice. No early termination fee applies.
+- Annual plans: Early termination fee of Rs.1,500 applies if cancelled before the contract end date.
+- 2-Year plans: Early termination fee of Rs.3,000 applies if cancelled in the first year; Rs.1,500 if cancelled in the second year.
+
+3. HOW TO CANCEL
+Customers may cancel via:
+- Phone: Call 1800-XXX-XXXX (toll-free, available 24/7)
+- Email: cancel@company.com with subject "CANCELLATION REQUEST - [Account Number]"
+- Online portal: My Account > Manage Subscription > Cancel Service
+
+4. WHAT HAPPENS AFTER CANCELLATION
+- Service continues until the end of the current billing period.
+- All data, emails, and hosted content will be deleted 30 days after cancellation.
+- Hardware (routers, modems) must be returned within 14 days or a replacement fee of Rs.2,500 will be charged.
+
+5. EXCEPTIONS
+The following scenarios allow immediate cancellation without fee:
+- Service unavailability exceeding 72 continuous hours in a 30-day period.
+- Price increase by more than 15% without 60 days prior notice.
+- Verified relocation to an area not covered by the network.
+
+6. WINBACK OFFER
+Customers who cancel may be eligible for a winback offer within 90 days of cancellation. Contact customer support to enquire.

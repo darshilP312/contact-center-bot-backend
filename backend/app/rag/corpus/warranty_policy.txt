@@ -1,0 +1,54 @@
+WARRANTY AND SERVICE GUARANTEE POLICY
+
+Effective Date: January 1, 2026
+Document ID: POL-WARRANTY-001
+
+1. EQUIPMENT WARRANTY
+1.1 Router and Modem
+All company-provided routers and modems carry a 1-year limited hardware warranty from the date of installation. This covers manufacturing defects and hardware failures under normal use.
+
+1.2 What is Covered
+- Hardware failure due to manufacturing defect.
+- Component failure not caused by physical damage, liquid, or misuse.
+- Software/firmware issues that cannot be resolved remotely.
+
+1.3 What is NOT Covered
+- Physical damage (drops, cracks, liquid damage).
+- Damage due to power surges (use a surge protector).
+- Modifications by unauthorised personnel.
+- Normal wear and tear.
+- Loss or theft.
+
+2. WARRANTY CLAIM PROCESS
+To raise a warranty claim:
+- Contact our support team within the warranty period.
+- An engineer will diagnose the issue remotely first (typically within 24 hours).
+- If the issue cannot be resolved remotely, a field visit will be arranged within 48 hours.
+- Defective equipment will be replaced free of charge within the warranty period.
+- Out-of-warranty replacement cost: Rs.2,500 for standard routers; Rs.4,000 for advanced routers.
+
+3. SERVICE LEVEL AGREEMENT (SLA)
+3.1 Fault Resolution Targets
+- Priority 1 (Total service loss): Resolution within 24 hours.
+- Priority 2 (Severely degraded service): Resolution within 48 hours.
+- Priority 3 (Minor degradation): Resolution within 5 business days.
+
+3.2 Engineer Visit SLA
+- Standard priority: Next business day between 9 AM - 6 PM.
+- High priority: Same day if reported before 2 PM, else next morning.
+
+3.3 Compensation for SLA Breach
+If the SLA is breached due to our fault (not external factors such as weather or infrastructure damage):
+- Pro-rated service credit for the affected period.
+- Additional compensation of Rs.200 per day for delays beyond 48 hours.
+
+4. PLANNED MAINTENANCE
+- Planned maintenance is notified at least 72 hours in advance via SMS and email.
+- Maintenance windows are scheduled between 2 AM - 6 AM to minimise disruption.
+- Planned maintenance does not count toward SLA breach calculations.
+
+5. FORCE MAJEURE
+Warranty and SLA obligations are suspended during force majeure events including:
+- Natural disasters, floods, earthquakes.
+- Government-mandated network outages.
+- Third-party infrastructure failures outside our control.

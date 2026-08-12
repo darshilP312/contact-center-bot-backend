@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: cc_redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: cc_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ccuser}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ccpass}
+      POSTGRES_DB: ${POSTGRES_DB:-contact_centre}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ccuser}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: cc_pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@local.dev
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - postgres
+    profiles:
+      - tools
+
+volumes:
+  redis_data:
+  postgres_data:

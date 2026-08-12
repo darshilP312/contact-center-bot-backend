@@ -1,0 +1,37 @@
+name: policy_rag
+description: Answer customer knowledge questions from policy documents using RAG.
+entry_step: classify_query
+
+steps:
+  classify_query:
+    goal: >
+      Determine if the question can be answered from the knowledge base.
+      If it requires account context, authenticate first.
+    action: rag_classify
+    on_success: retrieve_and_answer
+    branch:
+      requires_account: authenticate
+      not_answerable: escalate
+
+  authenticate:
+    goal: Verify identity if the question requires account-specific context.
+    tool: lookup_customer
+    on_success: retrieve_and_answer
+    on_fail: retrieve_and_answer
+
+  retrieve_and_answer:
+    goal: >
+      Retrieve the most relevant policy chunks from the FAISS index
+      and answer the question with source citations.
+    action: rag
+    rag_top_k: 3
+    on_success: confirm
+
+  escalate:
+    goal: The question cannot be answered from the knowledge base. Offer to connect with a specialist.
+    terminal: true
+
+  confirm:
+    goal: Confirm the answer was helpful and offer further assistance.
+    terminal: true
+    generate_summary: false

@@ -1,0 +1,62 @@
+name: billing_refund
+description: Handle billing disputes, payment issues, and refund requests.
+entry_step: authenticate
+
+steps:
+  authenticate:
+    goal: Verify the caller identity before accessing financial records.
+    tool: lookup_customer
+    on_success: lookup_invoice
+    on_fail: escalate
+    max_attempts: 2
+
+  lookup_invoice:
+    goal: Retrieve the disputed invoice or payment record for the customer.
+    tool: lookup_invoice
+    on_success: verify_refund_eligibility
+    on_fail: escalate
+
+  verify_refund_eligibility:
+    goal: Check if the amount and circumstance qualifies for a refund.
+    tool: check_refund_eligibility
+    on_success: refund_payment
+    branch:
+      ineligible: explain_policy
+
+  explain_policy:
+    goal: Explain the refund or billing policy from the knowledge base with citations.
+    action: rag
+    rag_query_template: "refund policy for {reason}"
+    terminal: true
+
+  refund_payment:
+    goal: >
+      Process the refund. NOTE: Amounts > Rs.10,000 require manager approval
+      and will be blocked by the policy engine before this step executes.
+    tool: refund_payment
+    policy_gated: true
+    on_success: send_confirmation
+    on_fail: escalate
+
+  send_confirmation:
+    goal: Notify the customer and record the refund transaction.
+    tool: send_sms
+    on_success: create_ticket
+
+  create_ticket:
+    goal: Record the refund transaction in the ticketing system.
+    tool: create_ticket
+    tool_args_override:
+      ticket_type: request
+      priority: medium
+    on_success: confirm
+
+  escalate:
+    goal: Transfer to a live agent with complete account and refund context.
+    tool: human_escalation
+    terminal: true
+
+  confirm:
+    goal: Confirm refund timeline, reference number, and close the interaction.
+    terminal: true
+    generate_summary: true
