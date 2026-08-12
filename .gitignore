@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+backend/.venv/
+.venv/
+venv/
+ENV/
+env/
+
+# Downloaded models (large binary files)
+backend/.models/
+*.onnx
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ot
+
+# Environment files — NEVER commit actual .env
+.env
+.env.local
+.env.production
+.env.staging
+# .env.example IS committed (it's a template)
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Test & Coverage
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Logs
+*.log
+logs/
+
+# FAISS indices (regenerated at startup)
+backend/faiss_indices/
+*.faiss
+*.pkl
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# Ruff / Black cache
+.ruff_cache/
+.mypy_cache/

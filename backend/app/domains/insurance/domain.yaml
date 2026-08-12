@@ -1,0 +1,166 @@
+domain_id: "insurance"
+domain_name: "Insurance"
+version: "1.0.0"
+description: "Enterprise insurance contact center domain — claims, policies, billing, renewals"
+
+# ─── Intent Taxonomy ─────────────────────────────────────────────────────────
+intents:
+  - name: file_claim
+    description: "Customer wants to file a new insurance claim for an incident (accident, damage, theft, medical, etc.)"
+    required_entities:
+      - policy_number
+      - incident_date
+      - incident_type
+    optional_entities:
+      - damage_amount
+      - third_party_involved
+      - location
+      - description
+    maps_to_workflow: claim_filing
+    maps_to_tools:
+      - lookup_customer
+      - verify_customer
+      - lookup_policy
+      - file_claim
+      - create_ticket
+    requires_rag: false
+
+  - name: policy_inquiry
+    description: "Customer asks about their policy coverage, terms, exclusions, or premium details"
+    required_entities: []
+    optional_entities:
+      - policy_number
+      - coverage_type
+    maps_to_workflow: policy_inquiry
+    maps_to_tools: []
+    requires_rag: true
+
+  - name: renewal_support
+    description: "Customer wants to renew their insurance policy or asks about upcoming renewal"
+    required_entities:
+      - policy_number
+    optional_entities:
+      - payment_method
+      - renewal_date
+    maps_to_workflow: renewal_support
+    maps_to_tools:
+      - lookup_customer
+      - verify_customer
+      - lookup_policy
+      - process_payment
+      - send_email
+      - send_sms
+    requires_rag: false
+
+  - name: premium_payment
+    description: "Customer wants to pay their insurance premium or check their payment history and status"
+    required_entities:
+      - policy_number
+    optional_entities:
+      - payment_amount
+      - payment_method
+    maps_to_workflow: billing_refund
+    maps_to_tools:
+      - lookup_customer
+      - verify_customer
+      - lookup_premium
+      - process_payment
+      - send_sms
+    requires_rag: false
+
+  - name: claim_status
+    description: "Customer wants to check the status of an existing claim they have filed"
+    required_entities:
+      - claim_id
+    optional_entities: []
+    maps_to_workflow: null
+    maps_to_tools:
+      - check_claim_status
+    requires_rag: false
+
+  - name: general_query
+    description: "General insurance question not matching a specific intent — FAQ, coverage questions, process queries"
+    required_entities: []
+    optional_entities: []
+    maps_to_workflow: null
+    maps_to_tools: []
+    requires_rag: true
+
+# ─── Entity Definitions ───────────────────────────────────────────────────────
+entity_definitions:
+  - name: policy_number
+    type: string
+    extraction_hint: "Insurance policy number, typically format POL-XXXXXX or similar alphanumeric"
+  - name: claim_id
+    type: string
+    extraction_hint: "Claim reference number, typically format CLM-XXXXXX"
+  - name: incident_date
+    type: date
+    extraction_hint: "Date of the incident in YYYY-MM-DD format, or relative (yesterday, last Monday)"
+  - name: incident_type
+    type: enum
+    values:
+      - car_accident
+      - home_damage
+      - theft
+      - medical
+      - fire
+      - flood
+      - other
+    extraction_hint: "Type of incident for which the claim is being filed"
+  - name: damage_amount
+    type: number
+    extraction_hint: "Estimated damage amount in rupees or local currency"
+  - name: coverage_type
+    type: enum
+    values:
+      - comprehensive
+      - third_party
+      - medical
+      - property
+      - life
+    extraction_hint: "Insurance coverage type the customer is asking about"
+  - name: payment_method
+    type: enum
+    values:
+      - upi
+      - credit_card
+      - debit_card
+      - net_banking
+      - cheque
+    extraction_hint: "Payment method for premium or claim refund"
+
+# ─── Enabled Tools ────────────────────────────────────────────────────────────
+enabled_tools:
+  # Core (domain-agnostic) tools
+  - lookup_customer
+  - verify_customer
+  - send_sms
+  - send_email
+  - create_ticket
+  - update_ticket
+  - route_to_human_agent
+  # Insurance-specific tools
+  - lookup_policy
+  - get_coverage_details
+  - file_claim
+  - check_claim_status
+  - assign_surveyor
+  - lookup_premium
+  - process_payment
+  - initiate_refund
+  - book_surveyor
+  - schedule_inspection
+
+# ─── RAG Configuration ────────────────────────────────────────────────────────
+rag:
+  knowledge_dir: "domains/insurance/knowledge/"
+  chunk_size: 512
+  chunk_overlap: 64
+  embedding_model: "local"    # Uses global EMBEDDING_MODEL setting (sentence-transformers)
+
+# ─── Escalation Configuration ─────────────────────────────────────────────────
+escalation_config:
+  sentiment_threshold: frustrated
+  max_turns: 6
+  high_value_claim_threshold: 500000   # ₹5,00,000 — triggers approval gate

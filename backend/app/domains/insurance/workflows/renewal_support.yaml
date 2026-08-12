@@ -1,0 +1,68 @@
+workflow_id: renewal_support
+workflow_name: "Renewal Support"
+description: "Help customer renew their insurance policy and process renewal payment"
+domain: insurance
+
+steps:
+  - id: authenticate
+    name: "Authenticate Customer"
+    description: "Verify customer identity"
+    required_tools:
+      - lookup_customer
+      - verify_customer
+    required_entities:
+      - policy_number
+    next_step: check_renewal_status
+    on_failure: escalate
+    agent_script: >
+      Let me verify your account before we proceed with the renewal.
+
+  - id: check_renewal_status
+    name: "Check Renewal Status"
+    description: "Look up policy and check renewal date, current premium"
+    required_tools:
+      - lookup_policy
+      - lookup_premium
+    required_entities:
+      - policy_number
+    next_step: confirm_renewal
+    on_failure: escalate
+    agent_script: >
+      Let me check the status of your policy renewal and current premium amount.
+
+  - id: confirm_renewal
+    name: "Confirm Renewal Terms"
+    description: "Present renewal terms and confirm customer wants to proceed"
+    required_tools: []
+    required_entities: []
+    next_step: process_renewal_payment
+    on_failure: abort
+    agent_script: >
+      Your policy is due for renewal. I'll share the premium amount and terms.
+      Would you like to proceed with the renewal?
+
+  - id: process_renewal_payment
+    name: "Process Renewal Payment"
+    description: "Process the premium payment for policy renewal"
+    required_tools:
+      - process_payment
+    required_entities:
+      - policy_number
+      - payment_method
+    next_step: send_renewal_confirmation
+    on_failure: escalate
+    agent_script: >
+      Processing your renewal payment now. This will take a moment.
+
+  - id: send_renewal_confirmation
+    name: "Send Renewal Confirmation"
+    description: "Send SMS and email with renewal confirmation and new policy documents"
+    required_tools:
+      - send_sms
+      - send_email
+    required_entities: []
+    next_step: null
+    on_failure: skip
+    agent_script: >
+      Your policy has been renewed successfully. I've sent a confirmation
+      SMS and email with your updated policy documents.

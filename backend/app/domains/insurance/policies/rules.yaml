@@ -1,0 +1,95 @@
+domain: insurance
+version: "1.0.0"
+description: "Insurance domain policy rules — evaluated by the Policy Engine on every turn"
+
+rules:
+  - rule_id: INS_001
+    name: "High-Value Claim Approval Gate"
+    description: >
+      Claims exceeding ₹5,00,000 require supervisor approval before processing.
+      Set awaiting_approval flag and pause workflow.
+    condition:
+      field: intent.entities.damage_amount
+      operator: gte
+      value: 500000
+      context: intent_is_file_claim
+    action: flag
+    flag: awaiting_approval
+    agent_message: >
+      This claim amount requires supervisor approval before we can proceed.
+      I'm flagging this for review. A supervisor will contact you within 2 hours.
+
+  - rule_id: INS_002
+    name: "Escalate Frustrated Customer"
+    description: >
+      If customer sentiment is frustrated AND turn count exceeds 6,
+      escalate to human agent immediately.
+    condition:
+      field: conversation.sentiment
+      operator: equals
+      value: frustrated
+      additional_condition:
+        field: conversation.turn_count
+        operator: gte
+        value: 6
+    action: escalate
+    escalation_reason: "Customer is frustrated after extended conversation — human agent required"
+
+  - rule_id: INS_003
+    name: "Block Transactions Without Verification"
+    description: >
+      Unverified customers cannot trigger payment, claim filing, or refund tools.
+      Request identity verification first.
+    condition:
+      field: customer.verified
+      operator: equals
+      value: false
+      context: action_requires_verification
+    action: block
+    block_message: >
+      For your security, I need to verify your identity before processing
+      this request. Could you please provide your date of birth and the
+      last 4 digits of your account number?
+
+  - rule_id: INS_004
+    name: "DPDP Consent for Data Lookup"
+    description: >
+      Under the Digital Personal Data Protection Act, customer must confirm
+      consent before we retrieve or process their personal data.
+    condition:
+      field: customer.verified
+      operator: equals
+      value: false
+      context: first_data_access
+    action: flag
+    flag: pending_consent
+    agent_message: >
+      As required by our data protection policy, I need your consent to access
+      and process your personal information during this call. Do you consent?
+
+  - rule_id: INS_005
+    name: "Urgent Sentiment — Priority Handling"
+    description: >
+      If customer expresses urgent sentiment (medical emergency, accident involving injuries),
+      flag for immediate escalation.
+    condition:
+      field: conversation.sentiment
+      operator: equals
+      value: urgent
+    action: escalate
+    escalation_reason: "Customer has expressed an urgent situation requiring immediate human assistance"
+
+  - rule_id: INS_006
+    name: "Refund Amount Limit"
+    description: >
+      Refunds above ₹1,00,000 require senior agent approval before processing.
+    condition:
+      field: intent.entities.refund_amount
+      operator: gte
+      value: 100000
+      context: intent_is_refund
+    action: flag
+    flag: awaiting_approval
+    agent_message: >
+      Refunds above ₹1,00,000 require senior approval. I've flagged your
+      request and a senior agent will process this within 4 business hours.

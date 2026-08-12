@@ -1,0 +1,31 @@
+workflow_id: policy_inquiry
+workflow_name: "Policy Inquiry"
+description: "Answer customer questions about their insurance policy using RAG knowledge base"
+domain: insurance
+
+steps:
+  - id: retrieve_knowledge
+    name: "Retrieve Policy Information"
+    description: "Search the knowledge base for relevant policy information"
+    required_tools: []
+    required_entities: []
+    next_step: lookup_specific_policy
+    on_failure: skip
+    rag_required: true
+    agent_script: >
+      Let me look up the relevant policy information for you.
+
+  - id: lookup_specific_policy
+    name: "Look Up Policy Details (if policy number provided)"
+    description: "If customer provided a policy number, retrieve their specific policy details"
+    required_tools:
+      - lookup_policy
+      - get_coverage_details
+    required_entities: []
+    optional_entities:
+      - policy_number
+      - coverage_type
+    next_step: null
+    on_failure: skip
+    agent_script: >
+      I'll pull up your specific policy details to give you accurate information.

@@ -1,0 +1,70 @@
+# Domain Plugin Schema — Enterprise Voice-First AI Command Center
+# Every domain YAML must satisfy this structure.
+# This file is documentation only — enforcement is via DomainLoader validation.
+
+# ─── Required Fields ──────────────────────────────────────────────────────────
+
+domain_id: string                    # Unique snake_case identifier (e.g. "insurance")
+domain_name: string                  # Human-readable name (e.g. "Insurance")
+version: string                      # Semantic version (e.g. "1.0.0")
+
+intents:
+  - name: string                     # snake_case intent name (e.g. "file_claim")
+    description: string              # Natural language description for LLM context
+    required_entities: list[string]  # Entity names that MUST be present to proceed
+    optional_entities: list[string]  # Entity names that improve response quality
+    maps_to_workflow: string | null  # Workflow YAML filename (without .yaml) or null
+    maps_to_tools: list[string]      # Tool names from enabled_tools list
+    requires_rag: bool               # (optional, default false) Route to RAG node
+
+enabled_tools: list[string]          # Subset of globally registered tool names
+
+rag:
+  knowledge_dir: string              # Relative path to knowledge documents directory
+  chunk_size: int                    # Token chunk size for document splitting (default: 512)
+  chunk_overlap: int                 # Overlap between chunks (default: 64)
+  embedding_model: string            # "local" for sentence-transformers or model name
+
+# ─── Optional Fields ──────────────────────────────────────────────────────────
+
+# entity_definitions:                # (optional) Metadata about entities
+#   - name: string
+#     type: string                   # string | date | number | enum
+#     extraction_hint: string        # Hint for LLM entity extraction
+
+# escalation_config:                 # (optional) Domain-specific escalation thresholds
+#   sentiment_threshold: string      # frustrated | urgent
+#   max_turns: int
+
+# ─── Workflow YAML Schema ─────────────────────────────────────────────────────
+# File: domains/<domain>/workflows/<workflow_name>.yaml
+
+# workflow_id: string
+# workflow_name: string
+# description: string
+# steps:
+#   - id: string                     # snake_case step ID
+#     name: string                   # Human-readable step name
+#     description: string
+#     required_tools: list[string]   # Tools that must succeed for this step
+#     required_entities: list[string]
+#     next_step: string | null       # ID of next step, or null if final
+#     on_failure: string             # escalate | retry | skip | abort
+
+# ─── Policy Rules YAML Schema ─────────────────────────────────────────────────
+# File: domains/<domain>/policies/rules.yaml
+
+# domain: string
+# version: string
+# rules:
+#   - rule_id: string                # DOMAIN_NNN format (e.g. INS_001)
+#     name: string
+#     description: string
+#     condition:
+#       field: string                # Dot-notation path in AgentState (e.g. customer.verified)
+#       operator: string             # equals | not_equals | gte | lte | length_gte | contains
+#       value: any
+#       context: string | null       # (optional) Additional condition context
+#     action: string                 # escalate | block | flag | approve_required
+#     escalation_reason: string | null
+#     block_message: string | null

@@ -1,0 +1,121 @@
+version: "1.0.0"
+description: "Global policy rules — applied to ALL domains on every turn"
+
+rules:
+  - rule_id: GLOBAL_001
+    name: "Maximum Session Length Escalation"
+    description: >
+      Escalate to human agent if session exceeds the configured maximum turn count
+      without resolution. Prevents indefinite AI conversations.
+    condition:
+      field: conversation.turn_count
+      operator: gte
+      value: 10  # Overridden per domain via escalation_config.max_turns
+    action: escalate
+    escalation_reason: "Session exceeded maximum length without resolution"
+
+  - rule_id: GLOBAL_002
+    name: "Unverified Customer Transaction Block"
+    description: >
+      Block transaction-type tools (payment, claim filing, refund) for
+      unverified customers. Customer must verify identity first.
+    condition:
+      field: customer.verified
+      operator: equals
+      value: false
+      context: transaction_tool_requested
+    action: block
+    block_message: >
+      For your security, I need to verify your identity before processing
+      this request. Please provide your date of birth and account number.
+
+  - rule_id: GLOBAL_003
+    name: "Urgent Sentiment Immediate Escalation"
+    description: >
+      Immediately route to human agent if customer expresses urgent sentiment
+      (medical emergency, accident with injuries, immediate danger).
+    condition:
+      field: conversation.sentiment
+      operator: equals
+      value: urgent
+    action: escalate
+    escalation_reason: "Customer expressed urgent situation requiring immediate human assistance"
+
+  - rule_id: GLOBAL_004
+    name: "PII Masking Required"
+    description: >
+      Phone numbers, account numbers, government IDs (PAN, Aadhaar) must never
+      appear unmasked in any log output or LLM prompt.
+    condition:
+      field: pii_masked_transcript
+      operator: equals
+      value: null  # If transcript was not masked, block
+    action: block
+    block_message: "Internal error — transcript could not be processed safely."
+
+  - rule_id: GLOBAL_005
+    name: "Frustrated Customer Extended Conversation Escalation"
+    description: >
+      Escalate if customer is frustrated AND conversation has exceeded 6 turns.
+      Long frustrated conversations indicate the AI cannot resolve the issue.
+    condition:
+      field: conversation.sentiment
+      operator: equals
+      value: frustrated
+      additional_condition:
+        field: conversation.turn_count
+        operator: gte
+        value: 6
+    action: escalate
+    escalation_reason: "Customer is frustrated after extended AI conversation — human agent required"
+
+  # ── Decision Engine Business Rules ─────────────────────────────────────────
+
+  - rule_id: DE-001
+    name: "Angry or Frustrated Sentiment Escalation"
+    description: >
+      Route to human supervisor if customer sentiment is angry or
+      frustrated AND at least 6 conversation turns have occurred. Also triggers
+      if the customer explicitly requests a human agent.
+    condition:
+      field: conversation.sentiment
+      operator: contains_any   # Custom operator handled by hard-rule evaluator
+      value:
+        - angry
+        - frustrated
+      additional_condition:
+        field: conversation.turn_count
+        operator: gte
+        value: 6
+    action: escalate
+    escalation_reason: "Customer sentiment requires human supervisor transfer"
+
+  - rule_id: DE-002
+    name: "High-Value Refund Manager Approval Gate"
+    description: >
+      Any refund amount greater than or equal to INR 10,000 cannot be
+      automatically processed. A Manager Approval ticket must be raised instead.
+      This rule is ABSOLUTE and cannot be overridden by any agent decision.
+    condition:
+      field: refund_amount
+      operator: gte
+      value: 10000
+    action: request_approval
+    approval_reason: "Refund amount exceeds INR 10,000 — mandatory manager approval required"
+    redirect_tool: "create_manager_approval_ticket"
+
+  - rule_id: DE-003
+    name: "Diagnostic Failure Limit — Engineer Visit Required"
+    description: >
+      If three or more software diagnostic attempts have failed in the current
+      session, do NOT attempt further remote troubleshooting. Immediately
+      schedule an engineer visit. Prevents customer fatigue and ensures
+      hardware issues are escalated appropriately.
+    condition:
+      field: failed_diagnostics_count
+      operator: gte
+      value: 3
+    action: escalate
+    escalation_reason: "Maximum diagnostic attempts reached — engineer visit required"
+    redirect_tool: "schedule_engineer_visit"
+

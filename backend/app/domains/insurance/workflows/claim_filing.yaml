@@ -1,0 +1,88 @@
+workflow_id: claim_filing
+workflow_name: "Claim Filing"
+description: "Guide customer through filing a new insurance claim end-to-end"
+domain: insurance
+
+steps:
+  - id: authenticate
+    name: "Authenticate Customer"
+    description: "Verify customer identity before proceeding with claim"
+    required_tools:
+      - lookup_customer
+      - verify_customer
+    required_entities:
+      - policy_number
+    next_step: verify_policy
+    on_failure: escalate
+    agent_script: >
+      Let me verify your identity before we proceed. I'll need your policy
+      number and date of birth to confirm your account.
+
+  - id: verify_policy
+    name: "Verify Policy Coverage"
+    description: "Check that the customer's policy is active and covers the incident type"
+    required_tools:
+      - lookup_policy
+    required_entities:
+      - policy_number
+      - incident_type
+    next_step: collect_incident_details
+    on_failure: escalate
+    agent_script: >
+      Let me pull up your policy details to confirm your coverage for this type of incident.
+
+  - id: collect_incident_details
+    name: "Collect Incident Details"
+    description: "Gather all required information about the incident"
+    required_tools: []
+    required_entities:
+      - incident_date
+      - incident_type
+      - damage_amount
+    next_step: file_claim_step
+    on_failure: retry
+    agent_script: >
+      I need a few more details about the incident. Can you tell me the date
+      it occurred, what happened, and an estimated damage amount?
+
+  - id: file_claim_step
+    name: "File the Claim"
+    description: "Submit the claim to the system and receive a claim ID"
+    required_tools:
+      - file_claim
+      - create_ticket
+    required_entities:
+      - policy_number
+      - incident_date
+      - incident_type
+      - damage_amount
+    next_step: assign_surveyor_step
+    on_failure: escalate
+    agent_script: >
+      I'm filing your claim now. This will take just a moment.
+
+  - id: assign_surveyor_step
+    name: "Assign Surveyor"
+    description: "Book a surveyor to assess the damage"
+    required_tools:
+      - assign_surveyor
+      - book_surveyor
+    required_entities:
+      - claim_id
+    next_step: notify_customer_step
+    on_failure: skip
+    agent_script: >
+      I'm arranging for a surveyor to assess the damage at your location.
+
+  - id: notify_customer_step
+    name: "Send Confirmation"
+    description: "Send SMS and email confirmation with claim details"
+    required_tools:
+      - send_sms
+      - send_email
+    required_entities: []
+    next_step: null
+    on_failure: skip
+    agent_script: >
+      I've sent you a confirmation SMS and email with your claim reference
+      number and next steps. Is there anything else I can help you with?
