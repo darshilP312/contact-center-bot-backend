@@ -1,8 +1,14 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
 
 
 class Settings(BaseSettings):
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/command_center"
     redis_url: str = "redis://localhost:6379/0"
     sarvam_api_key: str = "your_sarvam_api_key_here"
@@ -14,9 +20,27 @@ class Settings(BaseSettings):
     cors_origins: str = "http://localhost:5173,http://localhost:3000"
     log_level: str = "INFO"
 
+    # Optional Sarvam configurations
+    sarvam_stt_url: str = "https://api.sarvam.ai/speech-to-text"
+    sarvam_tts_url: str = "https://api.sarvam.ai/text-to-speech"
+    sarvam_stt_model: str = "saarika:v2.5"
+    sarvam_tts_model: str = "bulbul:v3"
+    sarvam_tts_speaker: str = "ritu"
+    sarvam_stt_language_code: str = "en-IN"
+    sarvam_tts_pace: float = 1.0
+
+    # Optional Groq configurations
+    groq_model: str = "groq/compound-mini"
+    groq_url: str = "https://api.groq.com/openai/v1/chat/completions"
+
+    # Server & Audio Settings
+    host: str = "0.0.0.0"
+    port: int = 8000
+    audio_sample_rate: int = 16000
+    audio_channels: int = 1
+    enable_mock_fallback: bool = True
+
     # ── Billing / Refund configuration ────────────────────────────────────────
-    # Amounts at or below this limit are auto-approved by the AI agent.
-    # Anything above is flagged as threshold_exceeded and routed to a supervisor.
     refund_threshold_amount: float = 5000.0   # INR
     refund_currency: str = "INR"
     billing_late_fee_amount: float = 100.0    # INR added after grace period
@@ -36,10 +60,6 @@ class Settings(BaseSettings):
     @property
     def cors_origins_list(self) -> list[str]:
         return [o.strip() for o in self.cors_origins.split(",")]
-
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
 
 
 @lru_cache

@@ -1,0 +1,212 @@
+{
+  "domain": "health_insurance",
+  "version": "2.1",
+  "title": "Health Insurance — Disease-Specific, Surgery & Scenario Coverage Q&A",
+  "description": "Covers specific disease questions, surgery coverage, mental health, maternity complications, paediatric conditions, COVID, lifestyle diseases, and claim rejection scenarios.",
+  "sections": [
+    {
+      "id": "lifestyle_and_chronic_diseases",
+      "title": "Lifestyle & Chronic Disease Coverage",
+      "content": "Lifestyle and chronic diseases like diabetes (Type 1 and Type 2), hypertension, thyroid disorders, asthma, and obesity are considered Pre-Existing Diseases (PED) if diagnosed before policy inception. They are covered after the PED waiting period: 36 months for Basic, 24 months for Gold, 12 months for Premium. Complications of these diseases requiring hospitalization (Diabetic Ketoacidosis, Hypertensive crisis, Asthma exacerbation needing ICU) are covered once the PED waiting period is over. Routine management (OPD consultations, daily medicines for diabetes/BP without hospitalization) is NOT covered unless OPD add-on is purchased (available only on Premium plan). Obesity and bariatric surgery (weight-loss surgery) is not covered unless BMI exceeds 40 and there are life-threatening comorbidities certified by two physicians — subject to insurer's prior approval.",
+      "keywords": ["diabetes insurance", "hypertension insurance", "thyroid cover", "asthma cover", "obesity surgery", "bariatric surgery", "lifestyle disease", "PED chronic"],
+      "faqs": [
+        {
+          "question": "Is diabetes covered under health insurance?",
+          "answer": "Yes, diabetes complications requiring hospitalization (DKA, HHS, diabetic foot infection, hypoglycaemia requiring IV glucose) are covered after the PED waiting period — 36 months (Basic), 24 months (Gold), 12 months (Premium). Routine OPD diabetes management without hospitalization is NOT covered under Basic/Gold, but is covered under Premium's OPD benefit."
+        },
+        {
+          "question": "Is hypertension (high blood pressure) covered?",
+          "answer": "Hypertensive emergencies requiring hospitalization (hypertensive crisis, hypertensive encephalopathy, aortic dissection) are covered after the PED waiting period. Routine BP medication without hospitalization is only covered under Health Shield Premium's OPD benefit."
+        },
+        {
+          "question": "Is bariatric surgery (weight-loss surgery) covered?",
+          "answer": "Generally excluded. Bariatric surgery may be considered for coverage only if BMI exceeds 40 with life-threatening comorbidities (Type 2 diabetes, severe hypertension, sleep apnoea), certified by two treating physicians, and subject to prior approval by SecureShield's medical underwriting team. Not covered under Basic or Gold as routine weight management."
+        },
+        {
+          "question": "Is PCOD or PCOS covered under health insurance?",
+          "answer": "PCOS-related complications requiring hospitalization (laparoscopic ovarian drilling, ruptured ovarian cyst, severe hormonal complications needing admission) are covered under Health Shield Gold and Premium. Routine OPD PCOS management (consultations, hormonal tablets) is not covered under Basic/Gold. PCOS itself may be a PED if diagnosed before policy inception — the 24-month (Gold) or 12-month (Premium) PED wait applies."
+        },
+        {
+          "question": "Is thyroid surgery covered under health insurance?",
+          "answer": "Yes. Thyroid surgery (thyroidectomy for goitre, thyroid cancer, or hyperthyroidism) requiring hospitalization is fully covered under all Health Shield plans. If thyroid disorder was diagnosed before policy start, the PED waiting period applies. Thyroid storm (life-threatening complication) is covered immediately if it occurs after the initial 30-day waiting period."
+        }
+      ]
+    },
+    {
+      "id": "cancer_cardiology_neuro",
+      "title": "Cancer, Heart, and Neurological Coverage",
+      "content": "Cancer in all stages is covered under all Health Shield plans — including surgery, chemotherapy (as day care), radiotherapy, targeted therapy (biologic agents), and ICU care post-surgery. Pre-hospitalization oncology consultations, biopsy, PET scan, and MRI are covered. Health Shield Premium includes Critical Illness lump sum of ₹5 Lakhs on first diagnosis. Cardiac conditions — including heart attack (MI), bypass surgery (CABG), angioplasty, valve replacement, and heart failure — are fully covered for hospitalization and ICU. Neurological conditions — stroke, epilepsy requiring admission, meningitis, brain tumour surgery — are fully covered. These are NOT pre-existing diseases unless previously diagnosed; accidental neurological injuries are covered from Day 1.",
+      "keywords": ["cancer insurance", "chemotherapy covered", "heart attack insurance", "bypass surgery covered", "CABG covered", "stroke insurance", "brain tumour covered", "cancer claim"],
+      "faqs": [
+        {
+          "question": "Is cancer covered under health insurance?",
+          "answer": "Yes. All malignant cancers (breast, lung, colon, cervical, blood cancer, brain tumour, etc.) are covered under all Health Shield plans. Coverage includes surgery, chemotherapy infusions (day care), radiotherapy, targeted therapy, and ICU post-surgery. Health Shield Premium additionally pays a Critical Illness lump sum of ₹5,00,000 on first cancer diagnosis."
+        },
+        {
+          "question": "Is bypass heart surgery (CABG) covered?",
+          "answer": "Yes. Coronary Artery Bypass Graft (CABG) surgery is covered under all Health Shield plans for the full hospital stay including ICU, surgery, anaesthesia, and post-op care. Health Shield Premium also pays a Critical Illness lump sum of ₹5 Lakhs on CABG surgery."
+        },
+        {
+          "question": "Is angioplasty or stent covered under health insurance?",
+          "answer": "Yes. Angioplasty (PTCA with or without stent) is covered as a day care/inpatient procedure under all plans. The cost of the coronary stent (implant) is also covered under Health Shield Gold and Premium. Under Basic, consumable/implant costs may be subject to policy schedule."
+        },
+        {
+          "question": "Is stroke covered under health insurance?",
+          "answer": "Yes. Stroke (ischaemic or haemorrhagic) requiring hospitalization, rehabilitation, neurosurgical intervention, or ICU is fully covered under all Health Shield plans. Long-term stroke rehabilitation hospitalization is also covered within the sum insured. Health Shield Premium provides a Critical Illness lump sum of ₹5L for stroke with permanent neurological deficit."
+        },
+        {
+          "question": "Is chemotherapy an indoor or day care procedure?",
+          "answer": "Chemotherapy infusion sessions are covered as day care procedures under all Health Shield plans — you do not need to be admitted overnight. Simply go to a network hospital or cancer day-care centre, receive chemotherapy, and the cost is covered as a day care claim."
+        },
+        {
+          "question": "Is HIV treatment covered?",
+          "answer": "HIV/AIDS-related treatment is covered ONLY under Health Shield Premium — including opportunistic infections like PCP pneumonia, CMV retinitis, and toxoplasmosis that arise from HIV-compromised immunity. Health Shield Basic and Gold do NOT cover HIV or AIDS-related hospitalizations."
+        }
+      ]
+    },
+    {
+      "id": "maternity_gynaecology",
+      "title": "Maternity, Gynaecology, and Women's Health Coverage",
+      "content": "Maternity coverage: Gold — ₹75,000 normal delivery, ₹1,00,000 C-section after 24-month wait, up to 2 deliveries. Premium — ₹1,50,000 normal delivery, ₹2,50,000 C-section after 12-month wait (nil for renewals beyond 2 years), up to 3 deliveries. Not available on Basic plan. Ectopic pregnancy is covered as an emergency (no waiting period) under Gold and Premium — it is life-threatening and not a planned maternity event. Miscarriage requiring D&C hospitalization is covered. Complications of pregnancy (pre-eclampsia, eclampsia, placenta praevia, postpartum haemorrhage, HELLP syndrome) are covered under Gold and Premium within maternity limits. IVF, IUI, surrogacy, and all assisted reproduction are permanently excluded across all plans. Gynaecological surgeries (fibroid removal, ovarian cystectomy, hysterectomy for cancer) are covered; hysterectomy for non-malignant benign conditions has a 24-month specific waiting period.",
+      "keywords": ["maternity claim", "pregnancy insurance", "C-section covered", "normal delivery covered", "ectopic pregnancy", "miscarriage covered", "IVF insurance", "gynaecology surgery", "fibroid surgery", "ovarian cyst surgery"],
+      "faqs": [
+        {
+          "question": "Is normal delivery covered under health insurance?",
+          "answer": "Under Health Shield Gold (after 24-month wait): ₹75,000. Under Health Shield Premium (after 12-month wait): ₹1,50,000. Not covered under Basic. Pre-natal consultations, ultrasounds, and antenatal blood tests are included within the maternity limit."
+        },
+        {
+          "question": "Is C-section delivery covered?",
+          "answer": "Yes. Caesarean Section is covered under Gold (₹1,00,000 after 24-month wait) and Premium (₹2,50,000 after 12-month wait). This includes C-section surgery, anaesthesia, OT charges, and post-operative hospital stay."
+        },
+        {
+          "question": "Is ectopic pregnancy covered without a waiting period?",
+          "answer": "Yes. Ectopic pregnancy is a medical emergency (fallopian tube rupture can be life-threatening) and is covered as an emergency hospitalization under Health Shield Gold and Premium — with NO maternity waiting period. The cost of emergency surgery, ICU if required, and blood transfusion is fully covered."
+        },
+        {
+          "question": "Is miscarriage (abortion) covered under health insurance?",
+          "answer": "Spontaneous miscarriage (natural pregnancy loss) requiring hospitalization for D&C or surgical evacuation is covered under Health Shield Gold and Premium. Medically induced termination of pregnancy for life-threatening maternal conditions is also covered. Elective abortions are generally not covered."
+        },
+        {
+          "question": "Is IVF or IUI covered under health insurance?",
+          "answer": "No. Infertility treatment, IVF (In Vitro Fertilization), IUI (Intrauterine Insemination), ICSI, egg donation, sperm donation, and surrogacy are permanently excluded from all Health Shield plans — Basic, Gold, and Premium."
+        },
+        {
+          "question": "Is surgery for uterine fibroids covered?",
+          "answer": "Yes. Uterine fibroid surgery (myomectomy or hysterectomy due to fibroids) requiring hospitalization is covered under Health Shield Gold and Premium. However, hysterectomy for non-malignant benign conditions has a 24-month specific waiting period. Emergency fibroid surgery (severe bleeding, fibroid torsion) may be covered without this wait."
+        },
+        {
+          "question": "Is ovarian cyst surgery covered?",
+          "answer": "Yes. Laparoscopic ovarian cystectomy is covered under Health Shield Gold and Premium as a day care procedure (if laparoscopic and completed within a day) or as an inpatient procedure. Emergency ovarian cyst surgery (torsion, rupture) is covered without waiting period under Gold and Premium."
+        }
+      ]
+    },
+    {
+      "id": "orthopaedic_spine",
+      "title": "Orthopaedic, Bone, and Spine Surgery Coverage",
+      "content": "Fractures from accidents are covered immediately from Day 1 (no waiting period) under all plans. Joint replacement surgery (knee, hip) has a 24-month specific waiting period if elective; if due to an accident, it is covered from Day 1. Spinal disc surgery (PLIF, TLIF, discectomy, laminectomy) is covered under all plans after the 30-day initial waiting. Arthroscopic surgeries (knee, shoulder, elbow) are covered as day care procedures under 540+ day care list in Gold and 600+ in Premium. Sports injuries requiring surgery — ACL tear repair, meniscus repair, rotator cuff surgery — are covered (not excluded as adventure sports unless the activity itself was an extreme adventure sport like motor racing or skydiving). Bone infections (osteomyelitis) requiring hospitalization and IV antibiotics are covered under all plans.",
+      "keywords": ["fracture insurance", "joint replacement insurance", "knee replacement covered", "hip replacement covered", "spine surgery covered", "disc surgery covered", "sports injury covered", "ACL surgery", "arthroscopy covered"],
+      "faqs": [
+        {
+          "question": "Is knee replacement surgery covered under health insurance?",
+          "answer": "Yes. Knee replacement (Total Knee Replacement / TKR) has a 24-month specific waiting period under Gold and Premium if the surgery is elective (e.g., due to arthritis). If the knee requires replacement due to a fracture or accident injury, it is covered from Day 1 without any waiting period."
+        },
+        {
+          "question": "Is spine surgery (back surgery) covered?",
+          "answer": "Yes. Spinal disc surgeries (discectomy, TLIF, PLIF, laminectomy) are covered under all Health Shield plans after the initial 30-day waiting period. Spinal cord compression surgery and vertebroplasty are also covered."
+        },
+        {
+          "question": "Is ACL surgery (knee ligament repair) covered?",
+          "answer": "Yes. ACL repair surgery (arthroscopic knee ligament reconstruction) is covered under Health Shield Gold and Premium as a day care/short-stay procedure. It does not fall under the sports exclusion category unless the injury occurred during an extreme/professional sport (motor racing, skydiving, mountaineering above 5,000m)."
+        },
+        {
+          "question": "Is a fracture from a sports game (cricket, football) covered?",
+          "answer": "Yes. Fractures from recreational sports (cricket, football, basketball, badminton, etc.) are covered under all Health Shield plans from Day 1 — no waiting period. The sports exclusion only applies to professional extreme adventure sports like motor racing, skydiving, and mountaineering above 5,000 metres."
+        },
+        {
+          "question": "Is physiotherapy after surgery covered?",
+          "answer": "Under Basic and Gold: Physiotherapy is only covered as part of post-hospitalization expenses (within 90 days of discharge, related to the same condition). Under Premium: Up to 20 physiotherapy sessions per year are covered under the OPD benefit — no hospitalization required."
+        }
+      ]
+    },
+    {
+      "id": "mental_health_paediatric",
+      "title": "Mental Health, Addiction, and Paediatric Coverage",
+      "content": "Mental health coverage is mandated by the Mental Healthcare Act 2017 and IRDAI. Health Shield Premium provides full inpatient psychiatric hospitalization coverage for Major Depressive Disorder requiring hospitalization, Bipolar Disorder acute episodes, Schizophrenia, Severe OCD, Anorexia Nervosa with medical complications, and PTSD requiring admission. Health Shield Basic and Gold cover mental health inpatient hospitalization in principle, but practical claim processing may involve additional documentation. De-addiction treatment for recognized medical conditions is covered under Premium up to ₹50,000/year at NABH-accredited centers. Drug and alcohol abuse treatment are excluded under Basic and Gold. Childhood cancers (ALL, AML), Type 1 Diabetes, congenital heart disease surgery, and serious paediatric conditions are covered for dependent children under all plans.",
+      "keywords": ["mental health insurance", "depression insurance", "bipolar insurance", "psychiatric hospitalization", "schizophrenia covered", "addiction treatment", "child health insurance", "paediatric insurance", "childhood cancer"],
+      "faqs": [
+        {
+          "question": "Is depression or anxiety covered under health insurance?",
+          "answer": "Under Health Shield Premium: Inpatient psychiatric hospitalization for Major Depressive Disorder, Bipolar Disorder, Schizophrenia, and Severe OCD is fully covered. 10 telepsychiatry sessions/year are also covered under OPD benefit. Under Basic and Gold: Mental health hospitalization is covered in principle per IRDAI mandate, but always review specific terms at the time of claim."
+        },
+        {
+          "question": "Is de-addiction treatment (alcohol/drug) covered?",
+          "answer": "Under Health Shield Premium only: De-addiction treatment at NABH-accredited residential centers is covered up to ₹50,000 per year. Under Health Shield Basic and Gold: Substance abuse, alcoholism, and drug addiction treatment are permanently excluded."
+        },
+        {
+          "question": "Is my child's medical treatment covered under a family floater policy?",
+          "answer": "Yes. All Health Shield Family Floater plans cover dependent children (from 91 days for Gold/Premium; 3 months for Basic) under the family sum insured. All diseases requiring hospitalization — including childhood cancers, Type 1 Diabetes, congenital heart conditions, febrile convulsions, and respiratory infections — are covered."
+        },
+        {
+          "question": "Is a congenital condition (birth defect) covered?",
+          "answer": "Congenital conditions diagnosed and treated in early childhood are covered under Health Shield Gold and Premium. Newborn cover (Day 1 to 90 days under Gold; Day 1 to 6 months under Premium) explicitly includes congenital disease treatment. For adults with undisclosed congenital conditions, it may be treated as a PED — always disclose at proposal stage."
+        }
+      ]
+    },
+    {
+      "id": "claim_rejection_grievance",
+      "title": "Claim Rejection, Disputes, and Grievance Redressal",
+      "content": "Reasons claims may be rejected: (1) Non-disclosure of pre-existing diseases at proposal stage. (2) Claim raised during waiting periods. (3) Treatment for permanently excluded conditions. (4) Insufficient documents submitted. (5) Treatment at non-empanelled hospital without prior intimation. (6) Room category upgraded beyond policy entitlement without accepting proportionate deduction. Steps if claim is rejected: (1) Request written explanation letter from SecureShield citing specific policy clause. (2) File internal grievance with SecureShield Grievance Redressal Officer within 30 days of rejection. (3) If unresolved in 30 days, escalate to IRDAI's Bima Bharosa portal (bimabharosa.irdai.gov.in) or call 155255. (4) Approach Insurance Ombudsman (Lokpal) if claim is below ₹50 Lakhs. (5) File consumer forum complaint under Consumer Protection Act. Moratorium: After 5 continuous policy years, insurer cannot contest any claim on grounds of non-disclosure of PED (except proven fraud).",
+      "keywords": ["claim rejected", "claim denial", "insurance dispute", "grievance", "ombudsman", "IRDAI complaint", "claim appeal", "non-disclosure", "why claim rejected"],
+      "faqs": [
+        {
+          "question": "My health insurance claim was rejected. What should I do?",
+          "answer": "Step 1: Get the written rejection letter with the specific policy clause cited. Step 2: File a grievance with SecureShield's Grievance Redressal Officer within 30 days. Step 3: If unresolved in 30 days, escalate to IRDAI Bima Bharosa portal (bimabharosa.irdai.gov.in) or call 155255. Step 4: Approach Insurance Ombudsman (Lokpal) for claims below ₹50 Lakhs."
+        },
+        {
+          "question": "Can my claim be rejected if I didn't disclose a pre-existing disease?",
+          "answer": "Yes. If a pre-existing disease (like diabetes or hypertension) was not disclosed at the time of policy purchase and a claim is made for it, the insurer can reject the claim. However, after 5 continuous policy years (moratorium period), the insurer cannot contest claims on non-disclosure grounds — except in cases of proven fraud."
+        },
+        {
+          "question": "What if the hospital charges more than the insurance company pays?",
+          "answer": "The insurer pays up to the eligible claim amount as per policy terms. If the hospital bill is higher due to: room upgrade above entitled category, non-covered items (cosmetics, personal charges), or items above sub-limits — those excess amounts are your responsibility. Always choose a room within your policy entitlement to avoid proportionate deductions."
+        },
+        {
+          "question": "What is the IRDAI Bima Bharosa portal?",
+          "answer": "IRDAI Bima Bharosa (bimabharosa.irdai.gov.in) is the official IRDAI grievance redressal platform where policyholders can register complaints against insurance companies. You can also call 155255 (IRDAI Helpline). If the complaint is unresolved in 30 days, you can approach the Insurance Ombudsman (Lokpal) in your city."
+        }
+      ]
+    },
+    {
+      "id": "tax_benefits_policy_management",
+      "title": "Tax Benefits, Policy Management, and Premium Payment",
+      "content": "Health insurance premiums are eligible for tax deduction under Section 80D of the Income Tax Act: (1) Premium paid for self, spouse, and children: deduction up to ₹25,000 per year. (2) If either you or your spouse is a senior citizen (60+): deduction up to ₹50,000 per year. (3) Additional deduction for premium paid for parents: up to ₹25,000 (if parents are below 60) or up to ₹50,000 (if parents are senior citizens). Maximum total deduction possible under Section 80D: ₹1,00,000 per year. Premium payment: quarterly via UPI, Credit/Debit Card, NetBanking, Cheque. Grace period: 30 days after premium due date before policy lapses. To add family members: spouse and children can be added at policy inception or at next renewal. Adding parents requires a fresh sub-account or a separate senior citizen policy. Policy document: available digitally via SecureShield app/portal within 48 hours of purchase.",
+      "keywords": ["80D tax benefit", "tax deduction health insurance", "Section 80D", "health insurance tax", "how to pay premium", "grace period health insurance", "add family members", "add parents to policy", "digital policy"],
+      "faqs": [
+        {
+          "question": "Is health insurance premium tax deductible?",
+          "answer": "Yes. Under Section 80D of Income Tax Act: Up to ₹25,000/year for premium paid for self, spouse, and children. Up to ₹50,000/year if you or your spouse is a senior citizen (60+). Up to additional ₹25,000 (or ₹50,000 if senior citizens) for premium paid for parents. Maximum total deduction: ₹1,00,000/year."
+        },
+        {
+          "question": "What is the grace period for health insurance premium payment?",
+          "answer": "A grace period of 30 days is provided after the premium due date. The policy remains active during the grace period. Claims are admissible during the grace period. If premium is not paid within 30 days of grace period, the policy lapses and coverage ceases."
+        },
+        {
+          "question": "Can I add my parents to my Health Shield policy?",
+          "answer": "Parents can typically be added to a new policy at inception, or a separate senior citizen Health Shield plan can be purchased for them. Parents are NOT usually added to an existing Family Floater policy mid-term after policy issuance — this is done at the next renewal with fresh underwriting for the parents. Contact SecureShield customer care to explore options."
+        },
+        {
+          "question": "Can I add a new family member (newborn baby) to my policy mid-year?",
+          "answer": "Yes. A newborn baby is automatically covered from Day 1 of birth up to 90 days (Gold) or 6 months (Premium) within the mother's sum insured. To add the baby as a permanent insured member after this period, intimate SecureShield within 30 days of birth and request policy endorsement."
+        },
+        {
+          "question": "How do I get a cashless health insurance card?",
+          "answer": "A Health Shield cashless card is issued digitally within 48 hours of policy issuance via email and the SecureShield app. Physical cards can be requested via customer care. The card contains your policy number, TPA details, and the 24x7 helpline — present it at any network hospital's TPA desk for cashless treatment."
+        },
+        {
+          "question": "How do I find a network hospital near me?",
+          "answer": "You can find network hospitals via: (1) SecureShield website — hospital finder tool by city/pincode/hospital name. (2) SecureShield mobile app — GPS-based nearest network hospital. (3) Calling the 24x7 customer helpline. Health Shield Gold has 7,500+ network hospitals; Premium has 10,000+ including all major Apollo, Fortis, Medanta, and Aster hospitals."
+        }
+      ]
+    }
+  ]
+}

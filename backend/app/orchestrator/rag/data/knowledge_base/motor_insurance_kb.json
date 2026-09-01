@@ -1,0 +1,236 @@
+{
+  "domain": "motor_insurance",
+  "version": "1.0",
+  "title": "Motor Insurance Comprehensive Knowledge Base",
+  "description": "Complete reference guide for motor vehicle insurance covering all policy types, coverage rules, claim processes, add-ons, exclusions, and frequently asked questions.",
+  "sections": [
+    {
+      "id": "motor_coverage_types",
+      "title": "Types of Motor Insurance Coverage",
+      "content": "Motor insurance in India is available in three main types: (1) Comprehensive Motor Insurance covers accidental damages to your own vehicle plus third-party liability. It is the most complete protection available. (2) Third Party Only Insurance is the minimum legally required cover that only pays for damages you cause to other people, vehicles, or property. It does not cover your own vehicle. (3) Own Damage Only Insurance covers only damages to your own vehicle from accidents, theft, fire, and natural disasters but does not include third-party liability.",
+      "keywords": ["comprehensive", "third party", "own damage", "types", "motor insurance", "vehicle insurance"],
+      "faqs": [
+        {
+          "question": "What is the difference between comprehensive and third party motor insurance?",
+          "answer": "Comprehensive motor insurance covers both damage to your own vehicle and third-party liability. Third-party only insurance is the minimum legal requirement and only covers damages you cause to others — it does not cover your own vehicle repairs."
+        },
+        {
+          "question": "Is motor insurance mandatory in India?",
+          "answer": "Yes, at minimum Third Party Liability insurance is mandatory under the Motor Vehicles Act 1988 for all vehicles driven on Indian roads. Driving without valid insurance is a punishable offence."
+        },
+        {
+          "question": "Which type of motor insurance should I buy?",
+          "answer": "For maximum protection, a Comprehensive Motor Insurance policy is recommended. It covers your own vehicle damage, theft, fire, natural disasters, and third-party liability all in one policy."
+        }
+      ]
+    },
+    {
+      "id": "zero_depreciation",
+      "title": "Zero Depreciation Cover (Nil Dep / Bumper-to-Bumper)",
+      "content": "Zero Depreciation is an add-on cover that ensures you receive the full claim amount without any deduction for depreciation of parts. In a standard policy, depreciation is deducted from the claim amount based on the age and material of the replaced part (e.g., 50% for rubber and plastic parts, 30% for glass). With Zero Depreciation, the insurer pays the full replacement cost of all parts — plastic, rubber, fibre, glass, and metal — at 100% value without any depreciation deduction. This is especially valuable for new vehicles (less than 5 years old) where parts are expensive. The only amount you pay out-of-pocket with zero dep is the compulsory deductible of INR 2,000.",
+      "keywords": ["zero depreciation", "nil dep", "bumper to bumper", "zero dep", "depreciation", "full claim", "parts replacement"],
+      "faqs": [
+        {
+          "question": "What is zero depreciation in motor insurance?",
+          "answer": "Zero Depreciation (also called Nil Dep or Bumper-to-Bumper cover) is an add-on that eliminates depreciation deductions on vehicle parts during a claim. Without it, the insurer deducts 30-50% for worn parts. With Zero Dep, you get 100% replacement cost for all parts — plastic, rubber, glass, and metal — without any depreciation deduction."
+        },
+        {
+          "question": "Is zero depreciation worth it?",
+          "answer": "Absolutely, especially for vehicles less than 5 years old. Without Zero Dep, you might pay 30-50% of parts cost from your pocket during a claim. For example, on a INR 40,000 bumper replacement, you could save INR 12,000-20,000 with Zero Dep cover."
+        },
+        {
+          "question": "How many times can I use zero depreciation?",
+          "answer": "Most policies allow Zero Depreciation to be used for 2 claims per policy year. After that, standard depreciation rules apply for additional claims within the same year."
+        }
+      ]
+    },
+    {
+      "id": "deductible_rules",
+      "title": "Deductible Rules — Compulsory and Voluntary",
+      "content": "Deductible is the amount you agree to pay from your pocket before the insurance company pays the rest of the claim. There are two types: (1) Compulsory Deductible is fixed by the insurer and is mandatory for every claim. For private cars, it is INR 2,000 per claim. For two-wheelers, it is INR 500 per claim. (2) Voluntary Deductible is an additional amount you choose to pay per claim in exchange for a lower premium. Voluntary deductible options typically range from INR 2,500 to INR 15,000. Higher voluntary deductible means lower annual premium but more out-of-pocket expense per claim.",
+      "keywords": ["deductible", "compulsory deductible", "voluntary deductible", "excess", "out of pocket"],
+      "faqs": [
+        {
+          "question": "What is compulsory deductible in motor insurance?",
+          "answer": "Compulsory deductible is a fixed amount you must pay from your pocket for every claim before the insurer pays the remaining amount. For private cars, the compulsory deductible is INR 2,000 per claim. For two-wheelers, it is INR 500."
+        },
+        {
+          "question": "What is voluntary deductible?",
+          "answer": "Voluntary deductible is an additional amount (beyond the compulsory deductible) that you voluntarily agree to bear per claim. Choosing a higher voluntary deductible reduces your annual premium. Options typically range from INR 2,500 to INR 15,000."
+        }
+      ]
+    },
+    {
+      "id": "claim_filing_process",
+      "title": "Motor Insurance Claim Filing Process",
+      "content": "Step-by-step process to file a motor insurance claim: Step 1 — Report the incident to the insurer within 48 hours of the accident by calling the helpline or using the app. Step 2 — Provide details including date, time, and location of the incident, nature of damage, and FIR number (if applicable for theft or third-party injury). Step 3 — A certified surveyor is appointed by the insurer within 24 hours to inspect the vehicle damage. Step 4 — Take your vehicle to an authorized network garage for cashless claim processing, or any garage of your choice for reimbursement claims. Step 5 — The surveyor inspects the damage, verifies parts, estimates repair cost, and submits the assessment report. Step 6 — After assessment approval, cashless repairs begin at the network garage. The insurer settles the bill directly with the garage. Step 7 — For reimbursement claims, pay the garage, collect original bills and receipts, and submit them to the insurer for reimbursement within 15 days.",
+      "keywords": ["claim filing", "how to file claim", "claim process", "report accident", "claim steps", "48 hours"],
+      "faqs": [
+        {
+          "question": "How do I file a motor insurance claim?",
+          "answer": "Report the incident to your insurer within 48 hours by calling the helpline. Provide accident details and damage description. A surveyor will be assigned within 24 hours to inspect the vehicle. Take the vehicle to a network garage for cashless repairs, or any garage for reimbursement claims."
+        },
+        {
+          "question": "What is the time limit to report a motor insurance claim?",
+          "answer": "You must report the claim to your insurer within 48 hours of the incident. Delayed reporting may result in claim rejection or reduced payout."
+        },
+        {
+          "question": "What documents are needed for a motor insurance claim?",
+          "answer": "You need: (1) Claim intimation form, (2) Copy of driving license, (3) Copy of RC (Registration Certificate), (4) Copy of insurance policy, (5) FIR copy (for theft or third-party injury), (6) Repair estimates and bills, (7) Photographs of the damage."
+        }
+      ]
+    },
+    {
+      "id": "surveyor_process",
+      "title": "Surveyor Inspection Process",
+      "content": "After a claim is registered, the insurer appoints a certified IRDA-licensed surveyor within 24 hours. The surveyor's role is to physically inspect the vehicle damage, verify the cause and extent of damage, estimate repair costs, and check for any policy violations. The surveyor visits the network garage or the customer's location (for immovable vehicles). The survey report includes photographs, damage assessment, parts list, estimated cost, and recommendation for approval. Based on the surveyor's report, the claim is either approved, partially approved, or rejected. For cashless claims at network garages, repair work begins immediately after surveyor approval.",
+      "keywords": ["surveyor", "inspection", "survey process", "claim inspection", "damage assessment", "IRDA surveyor"],
+      "faqs": [
+        {
+          "question": "When will the surveyor come for inspection?",
+          "answer": "The insurer appoints a certified surveyor within 24 hours of claim registration. The surveyor will schedule a visit to the network garage or your location (for immovable vehicles) to inspect the damage."
+        },
+        {
+          "question": "What does the surveyor check?",
+          "answer": "The surveyor inspects the physical damage, verifies the cause of damage matches the claim, photographs the vehicle, estimates repair costs, checks parts to be replaced, and verifies there are no policy violations."
+        }
+      ]
+    },
+    {
+      "id": "cashless_vs_reimbursement",
+      "title": "Cashless Claims vs Reimbursement Claims",
+      "content": "Cashless Claim: You take your vehicle to an insurer-authorized network garage. The insurer settles the repair bill directly with the garage. You only pay the deductible (INR 2,000 compulsory + any voluntary deductible). No upfront payment needed. Cashless claims are typically settled within 2-4 working days after surveyor approval. Reimbursement Claim: You get the vehicle repaired at any garage of your choice and pay the full repair cost upfront. Then you submit original bills, receipts, and the claim form to the insurer. The insurer reimburses the approved amount (minus deductible and depreciation if applicable) within 7-15 working days after document verification.",
+      "keywords": ["cashless", "reimbursement", "network garage", "claim settlement", "repair", "garage"],
+      "faqs": [
+        {
+          "question": "What is a cashless motor insurance claim?",
+          "answer": "In a cashless claim, you take your vehicle to an insurer-authorized network garage, and the insurer pays the garage directly. You only pay the deductible amount (INR 2,000 compulsory). No upfront payment is needed from your side."
+        },
+        {
+          "question": "How long does cashless claim settlement take?",
+          "answer": "Cashless claims at network garages are typically settled within 2-4 working days after the surveyor approves the repair estimate."
+        },
+        {
+          "question": "Can I go to any garage for repairs?",
+          "answer": "Yes, but only network garages offer cashless repairs. If you go to a non-network garage, you must pay upfront and file a reimbursement claim. The insurer will reimburse the approved amount within 7-15 working days."
+        }
+      ]
+    },
+    {
+      "id": "add_ons",
+      "title": "Motor Insurance Add-On Covers",
+      "content": "Add-on covers provide additional protection beyond the standard comprehensive policy. Key add-ons include: (1) Zero Depreciation — Pays full replacement cost of parts without depreciation deduction. (2) Roadside Assistance (RSA) — 24x7 emergency support including towing (up to 50km), flat tire change, battery jump-start, fuel delivery, and lockout assistance. (3) Engine Protection Cover — Covers engine damage due to water ingression, oil leakage, hydrostatic lock, and engine seizure which are excluded in standard policies. (4) Consumables Cover — Reimburses cost of consumable items like engine oil, coolant, brake fluid, nuts, bolts, and washers used during repairs. (5) Key Replacement Cover — Covers cost of replacing lost or stolen car keys and reprogramming electronic locks. (6) Return to Invoice (RTI) — In case of total loss or theft, pays the full invoice price of the vehicle instead of IDV. (7) Personal Accident Cover — Covers medical expenses and compensation for the owner-driver in case of accident. (8) Passenger Cover — Extends accident coverage to passengers.",
+      "keywords": ["add-on", "addon", "RSA", "roadside assistance", "engine protection", "consumables", "key replacement", "return to invoice", "RTI", "personal accident"],
+      "faqs": [
+        {
+          "question": "What add-ons are available in motor insurance?",
+          "answer": "Key add-ons include: Zero Depreciation (full parts cost without depreciation), Roadside Assistance (24x7 towing, flat tire, battery jump-start), Engine Protection (water damage, oil leak), Consumables Cover (oil, coolant, brake fluid), Key Replacement, Return to Invoice (full invoice price on total loss), and Personal Accident Cover."
+        },
+        {
+          "question": "What is roadside assistance in motor insurance?",
+          "answer": "Roadside Assistance (RSA) provides 24x7 emergency support including towing up to 50km, flat tire change, battery jump-start, emergency fuel delivery, and lockout assistance. You can call the RSA helpline anytime you're stranded."
+        },
+        {
+          "question": "What is engine protection cover?",
+          "answer": "Engine Protection Cover protects against engine damage caused by water ingression (flooding/waterlogging), oil leakage, hydrostatic lock, and engine seizure. These are specifically excluded from standard comprehensive policies, so this add-on is crucial in flood-prone areas."
+        }
+      ]
+    },
+    {
+      "id": "exclusions",
+      "title": "Motor Insurance Exclusions — What Is NOT Covered",
+      "content": "Standard motor insurance policies do not cover: (1) Damage while driving under the influence of alcohol or drugs. (2) Damage while driving without a valid driving license. (3) Normal wear and tear, mechanical or electrical breakdown. (4) Consequential damage not directly caused by an accident. (5) War, nuclear risk, and terrorist activity (unless covered by a separate endorsement). (6) Using the vehicle for commercial purposes without a commercial policy. (7) Driving outside the geographical area specified in the policy. (8) Damage to tires and tubes unless damaged in an accident that also damages the vehicle. (9) Depreciation of parts (unless Zero Depreciation add-on is purchased). (10) Engine damage due to water ingression (unless Engine Protection add-on is purchased). (11) Loss of personal belongings from the vehicle. (12) Claims reported after 48 hours without valid reason for delay.",
+      "keywords": ["exclusions", "not covered", "policy exclusions", "what is not covered", "rejected claims", "drunk driving"],
+      "faqs": [
+        {
+          "question": "What is not covered under motor insurance?",
+          "answer": "Motor insurance does not cover: drunk driving, driving without valid license, normal wear and tear, mechanical breakdowns, commercial use without permit, damage outside policy area, personal belongings, and engine damage from water (unless Engine Protection add-on is purchased)."
+        },
+        {
+          "question": "Will my claim be rejected if I was driving drunk?",
+          "answer": "Yes. Driving under the influence of alcohol or drugs is a standard exclusion in all motor insurance policies. Any claim arising from an incident while intoxicated will be rejected."
+        },
+        {
+          "question": "Is engine damage from flooding covered?",
+          "answer": "Engine damage from water ingression (flooding, waterlogging) is NOT covered under a standard comprehensive policy. You need the Engine Protection add-on for this coverage. Without it, the repair cost comes entirely from your pocket."
+        }
+      ]
+    },
+    {
+      "id": "ncb_rules",
+      "title": "No Claim Bonus (NCB) Rules",
+      "content": "No Claim Bonus (NCB) is a discount on the premium for every claim-free year. NCB slabs: 1st claim-free year — 20% discount, 2nd year — 25%, 3rd year — 35%, 4th year — 45%, 5th and subsequent years — 50% maximum discount. NCB is earned by the policyholder, not the vehicle, so it can be transferred to a new vehicle. NCB is lost if a claim is made during the policy year — the discount resets. NCB Protection add-on allows you to retain your NCB even after making one claim in a policy year.",
+      "keywords": ["NCB", "no claim bonus", "premium discount", "claim free", "NCB transfer", "NCB protection"],
+      "faqs": [
+        {
+          "question": "What is No Claim Bonus in motor insurance?",
+          "answer": "No Claim Bonus (NCB) is a premium discount earned for every claim-free year. It starts at 20% for the first year and increases up to 50% by the 5th claim-free year. NCB belongs to the policyholder (not the vehicle) and can be transferred to a new car."
+        },
+        {
+          "question": "Will I lose my NCB if I make a claim?",
+          "answer": "Yes, making a claim in a policy year resets your NCB to zero. However, with an NCB Protection add-on, you can retain your NCB even after making one claim per year."
+        }
+      ]
+    },
+    {
+      "id": "idv_calculation",
+      "title": "Insured Declared Value (IDV) Calculation",
+      "content": "Insured Declared Value (IDV) is the maximum amount the insurer will pay in case of total loss or theft of the vehicle. IDV is calculated as the current market value of the vehicle, which is the manufacturer's listed selling price minus depreciation based on the vehicle's age. Depreciation schedule: Less than 6 months — 5%, 6 months to 1 year — 15%, 1 to 2 years — 20%, 2 to 3 years — 30%, 3 to 4 years — 40%, 4 to 5 years — 50%. For vehicles older than 5 years, IDV is mutually agreed between the insurer and policyholder. A higher IDV means higher premium but better payout. A lower IDV means lower premium but less compensation on total loss.",
+      "keywords": ["IDV", "insured declared value", "vehicle value", "market value", "total loss", "depreciation schedule"],
+      "faqs": [
+        {
+          "question": "What is IDV in motor insurance?",
+          "answer": "Insured Declared Value (IDV) is the maximum amount the insurer will pay if your vehicle is stolen or declared a total loss. It is calculated as the manufacturer's selling price minus depreciation based on the vehicle's age."
+        },
+        {
+          "question": "How is IDV calculated?",
+          "answer": "IDV = Manufacturer's listed selling price minus age-based depreciation. Depreciation rates: <6 months: 5%, 6-12 months: 15%, 1-2 years: 20%, 2-3 years: 30%, 3-4 years: 40%, 4-5 years: 50%. For vehicles over 5 years, IDV is mutually agreed."
+        }
+      ]
+    },
+    {
+      "id": "policy_renewal",
+      "title": "Motor Insurance Policy Renewal",
+      "content": "Motor insurance policies are typically valid for one year and must be renewed before the expiry date. If the policy lapses (expires without renewal), you lose your accumulated NCB. A lapsed policy can be renewed within 90 days of expiry with some insurers, but the vehicle may require inspection. If the gap exceeds 90 days, you must buy a new policy and your NCB resets to zero. Benefits of timely renewal: uninterrupted coverage, accumulated NCB preserved, no inspection required, and seamless cashless claim facility. Most insurers offer online renewal with instant policy issuance.",
+      "keywords": ["renewal", "policy renewal", "expiry", "lapsed policy", "renew motor insurance"],
+      "faqs": [
+        {
+          "question": "When should I renew my motor insurance?",
+          "answer": "Renew before the policy expiry date to maintain uninterrupted coverage and preserve your accumulated No Claim Bonus. Most insurers allow renewal up to 30 days before expiry."
+        },
+        {
+          "question": "What happens if my motor insurance expires?",
+          "answer": "If your policy lapses, you lose NCB, may need a vehicle inspection for renewal, and have no coverage during the gap period. If the gap exceeds 90 days, you'll likely need to buy a fresh policy."
+        }
+      ]
+    },
+    {
+      "id": "third_party_liability",
+      "title": "Third Party Liability Coverage",
+      "content": "Third-party liability insurance covers your legal liability for injuries or damage caused to other people, their vehicles, or property due to your vehicle. This includes bodily injury or death of third parties, damage to third-party property, and legal defense costs. The coverage amount for bodily injury or death is unlimited as per Indian Motor Vehicles Act. For property damage, the coverage is typically up to INR 7.5 lakhs. Third-party insurance is the minimum mandatory cover required by law to drive any vehicle on Indian roads.",
+      "keywords": ["third party", "liability", "third party insurance", "legal liability", "property damage", "bodily injury"],
+      "faqs": [
+        {
+          "question": "What does third party insurance cover?",
+          "answer": "Third-party insurance covers your legal liability for damage or injury caused to other people, their vehicles, or property by your vehicle. It covers bodily injury/death (unlimited liability as per law) and third-party property damage (typically up to INR 7.5 lakhs)."
+        }
+      ]
+    },
+    {
+      "id": "premium_factors",
+      "title": "Factors Affecting Motor Insurance Premium",
+      "content": "Motor insurance premiums are determined by several factors: (1) Vehicle type and model — higher value vehicles have higher premiums. (2) Vehicle age — newer vehicles cost more to insure. (3) Engine capacity (cubic capacity) — higher CC engines attract higher premiums. (4) Geographic zone — metro cities have higher premiums due to higher risk. (5) NCB discount — claim-free years reduce the premium by up to 50%. (6) Voluntary deductible — choosing a higher deductible lowers the premium. (7) Add-ons selected — each add-on increases the premium. (8) Driver's age and driving history. (9) Purpose of use — personal vs commercial. (10) Anti-theft devices — approved devices may qualify for a discount.",
+      "keywords": ["premium", "premium calculation", "insurance cost", "factors", "premium factors", "how much"],
+      "faqs": [
+        {
+          "question": "How is motor insurance premium calculated?",
+          "answer": "Premium depends on vehicle type and value, engine capacity, vehicle age, location (metro vs non-metro), NCB discount, voluntary deductible, selected add-ons, and whether the vehicle has anti-theft devices. Higher-value newer vehicles in metro cities with more add-ons will have higher premiums."
+        },
+        {
+          "question": "How can I reduce my motor insurance premium?",
+          "answer": "You can reduce premium by: (1) Maintaining a claim-free record for NCB discount (up to 50%), (2) Choosing a higher voluntary deductible, (3) Installing ARAI-approved anti-theft devices, (4) Removing unnecessary add-ons, and (5) Comparing quotes from multiple insurers."
+        }
+      ]
+    }
+  ]
+}

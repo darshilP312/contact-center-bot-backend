@@ -10,7 +10,6 @@ from app.orchestrator.planner.planner import AgentPlanner
 from app.orchestrator.planner.executor import PlanExecutor
 from app.orchestrator.tools.orchestrator import ToolOrchestrator
 from app.orchestrator.rag.manager import RAGManager
-from app.orchestrator.rag.embedder import TextEmbedder
 from app.orchestrator.policy.engine import PolicyEngine
 from app.orchestrator.workflows.executor import WorkflowExecutor
 from app.orchestrator.summary.generator import CallSummaryGenerator, EscalationHandler
@@ -82,7 +81,6 @@ class AgentOrchestrator:
         self._tool_orchestrator = ToolOrchestrator()
         self._executor = PlanExecutor(self._tool_orchestrator)
         self._rag = RAGManager()
-        self._embedder = TextEmbedder()
         self._policy = PolicyEngine()
         self._workflow_executor = WorkflowExecutor()
         self._groq = AsyncGroq(api_key=settings.groq_api_key)
@@ -102,11 +100,9 @@ class AgentOrchestrator:
         # This cuts ~2-4s of sequential wait per turn.
         async def _do_rag():
             try:
-                embedding = await self._embedder.embed(transcript)
                 async with async_session_factory() as db:
                     result = await self._rag.retrieve(
                         query=transcript,
-                        query_embedding=embedding,
                         db=db,
                         conversation_id=conversation_id,
                         top_k=3,

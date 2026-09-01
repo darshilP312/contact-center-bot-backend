@@ -1,58 +1,28 @@
 """
-RAGManager — ChromaDB-backed semantic retrieval.
+RAGManager — Production-grade retrieval using the full RAG engine from backend/RAG/.
 
-Architecture:
-  - PersistentClient stores vectors on disk (.chroma_db/ at backend root)
-  - Collection: "knowledge_base"  (HNSW index, cosine distance)
-  - Query: returns top-k nearest neighbours by cosine similarity
-  - Retrieval log: written to knowledge_retrieval table (unchanged)
+Replaces the old ChromaDB stub that searched a near-empty `.chroma_db/` collection.
+Now delegates to RAGSearchEngine (ChromaDB + FAISS + RRF + Redis caching) which has
+the full knowledge base (motor, health, home insurance — 19 files, 350+ chunks).
 
-Thread-safety: ChromaDB client is created once per process and shared.
+The public API preserves backward compatibility with agent.py callers:
+  - RAGResult.to_context_block() — same interface as before
+  - RAGResult.passages — list of RetrievedPassage with .title/.score/.category/.content
 """
 from __future__ import annotations
 
 import logging
 import uuid
 from dataclasses import dataclass, field
-from pathlib import Path
 
-import chromadb
-from chromadb.config import Settings
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models.knowledge import KnowledgeRetrieval
 
 logger = logging.getLogger(__name__)
 
-# Persistent storage right next to the backend directory
-_CHROMA_PATH = str(Path(__file__).resolve().parents[4] / ".chroma_db")
-_COLLECTION_NAME = "knowledge_base"
 
-# Module-level singleton — created once per worker process
-_chroma_client: chromadb.PersistentClient | None = None
-_collection = None
-
-
-def _get_collection():
-    """Return the ChromaDB collection, initialising the client if needed."""
-    global _chroma_client, _collection
-    if _collection is None:
-        _chroma_client = chromadb.PersistentClient(
-            path=_CHROMA_PATH,
-            settings=Settings(anonymized_telemetry=False),
-        )
-        _collection = _chroma_client.get_or_create_collection(
-            name=_COLLECTION_NAME,
-            metadata={"hnsw:space": "cosine"},   # cosine distance for semantic search
-        )
-        logger.info(
-            "ChromaDB collection '%s' ready — %d docs, path: %s",
-            _COLLECTION_NAME, _collection.count(), _CHROMA_PATH,
-        )
-    return _collection
-
-
-# ─── Data Classes ─────────────────────────────────────────────────────────────
+# ─── Data Classes (preserved interface for agent.py) ──────────────────────────
 
 @dataclass
 class RetrievedPassage:
@@ -82,85 +52,73 @@ class RAGResult:
 
 class RAGManager:
     """
-    Semantic RAG retrieval backed by ChromaDB.
+    Semantic RAG retrieval backed by the full production RAG engine.
 
-    Usage:
+    Usage (unchanged from old interface):
         manager = RAGManager()
         result = await manager.retrieve(query, query_embedding, db, conversation_id)
+
+    The query_embedding parameter is accepted for backward compatibility but is no longer
+    used — the RAG engine handles embedding internally using the same all-MiniLM-L6-v2 model.
     """
-
-    def search(
-        self,
-        query_embedding: list[float],
-        top_k: int = 3,
-        min_score: float = 0.30,
-    ) -> list[RetrievedPassage]:
-        """
-        Execute a vector similarity search against ChromaDB.
-        ChromaDB returns distances (0=identical, 2=opposite for cosine).
-        We convert: similarity = 1 - distance/2   → range [0, 1].
-        """
-        collection = _get_collection()
-        if collection.count() == 0:
-            logger.warning("RAG: knowledge base is empty — no results returned")
-            return []
-
-        results = collection.query(
-            query_embeddings=[query_embedding],
-            n_results=min(top_k, collection.count()),
-            include=["documents", "metadatas", "distances"],
-        )
-
-        passages: list[RetrievedPassage] = []
-        docs      = results.get("documents", [[]])[0]
-        metas     = results.get("metadatas", [[]])[0]
-        distances = results.get("distances", [[]])[0]
-        ids       = results.get("ids", [[]])[0]
-
-        for doc, meta, dist, cid in zip(docs, metas, distances, ids):
-            # ChromaDB cosine distance ∈ [0, 2]; convert to similarity ∈ [0, 1]
-            similarity = round(1.0 - dist / 2.0, 4)
-            if similarity < min_score:
-                continue
-            passages.append(
-                RetrievedPassage(
-                    doc_id=meta.get("doc_id", ""),
-                    chunk_id=cid,
-                    title=meta.get("title", ""),
-                    category=meta.get("category", "general"),
-                    content=doc,
-                    score=similarity,
-                )
-            )
-
-        logger.debug(
-            "RAG search returned %d passages above min_score=%.2f",
-            len(passages), min_score,
-        )
-        return passages
 
     async def retrieve(
         self,
         query: str,
-        query_embedding: list[float],
-        db: AsyncSession,
+        query_embedding: list[float] | None = None,  # kept for compat, unused
+        db: AsyncSession | None = None,
         conversation_id=None,
         top_k: int = 3,
+        domain: str | None = None,
     ) -> RAGResult:
         """
-        Full retrieval pipeline:
-        1. Vector search (ChromaDB)
-        2. Log retrievals to knowledge_retrieval table
+        Full retrieval pipeline using production RAG engine:
+        1. Semantic search via ChromaDB + FAISS (RRF fusion) + Redis cache
+        2. Optionally log retrievals to knowledge_retrieval table
         """
-        passages = self.search(query_embedding, top_k=top_k)
+        try:
+            from app.orchestrator.rag import rag_engine  # noqa: PLC0415
 
-        if passages and conversation_id:
+            if not rag_engine.is_ready:
+                logger.warning("RAG engine not initialized — returning empty results")
+                return RAGResult(query=query)
+
+            # Infer domain from query if not provided
+            if domain is None:
+                domain = _infer_domain(query)
+
+            rag_results = await rag_engine.search(
+                query=query,
+                top_k=top_k,
+                domain=domain,
+            )
+
+        except Exception as exc:
+            logger.error("RAG search failed: %s", exc)
+            return RAGResult(query=query)
+
+        # Convert RAGSearchEngine results to the preserved RetrievedPassage interface
+        passages: list[RetrievedPassage] = []
+        for r in rag_results:
+            passages.append(
+                RetrievedPassage(
+                    doc_id=r.metadata.get("section_id", ""),
+                    chunk_id=r.source,
+                    title=r.section_title or r.source,
+                    category=_domain_to_category(r.domain),
+                    content=r.content[:600],  # Trim for LLM context budget
+                    score=r.score,
+                )
+            )
+
+        # Persist retrieval log to PostgreSQL (audit trail)
+        if passages and conversation_id and db is not None:
             for p in passages:
                 try:
                     record = KnowledgeRetrieval(
                         conversation_id=conversation_id,
                         query=query,
-                        doc_id=uuid.UUID(p.doc_id) if p.doc_id else None,
+                        doc_id=uuid.UUID(p.doc_id) if _is_valid_uuid(p.doc_id) else None,
                         passage=p.content[:500],
                         relevance_score=p.score,
                     )
@@ -169,4 +127,68 @@ class RAGManager:
                 except Exception as exc:
                     logger.error("RAG retrieval persist error: %s", exc)
 
+        logger.debug(
+            "RAG retrieved %d passages for query='%s...' domain=%s",
+            len(passages), query[:60], domain,
+        )
         return RAGResult(query=query, passages=passages)
+
+
+# ─── Helpers ──────────────────────────────────────────────────────────────────
+
+_MOTOR_KEYWORDS = {
+    "car", "vehicle", "motor", "bike", "accident", "garage", "ncb", "depreciation",
+    "own damage", "third party", "tp", "od", "rto", "chassis", "engine", "roadside",
+    "towing", "cashless repair", "claim motor", "comprehensive", "zero dep",
+}
+_HEALTH_KEYWORDS = {
+    "health", "hospital", "medical", "claim health", "doctor", "surgery",
+    "icu", "cashless health", "pre-existing", "ped", "copay", "deductible",
+    "maternity", "daycare", "critical illness", "sum insured", "tpa",
+    "network hospital", "health shield", "covid", "treatment",
+}
+_HOME_KEYWORDS = {
+    "home", "house", "property", "flat", "apartment", "earthquake", "flood",
+    "fire home", "burglary", "theft home", "building", "contents", "restoration",
+    "home protector", "reinstatement",
+}
+
+
+def _infer_domain(query: str) -> str | None:
+    """
+    Heuristic domain detection so the RRF engine gets a focused metadata filter.
+    Returns None if domain is ambiguous (full-corpus search).
+    """
+    q = query.lower()
+    tokens = set(q.split())
+
+    motor_hits = sum(1 for kw in _MOTOR_KEYWORDS if kw in q)
+    health_hits = sum(1 for kw in _HEALTH_KEYWORDS if kw in q)
+    home_hits   = sum(1 for kw in _HOME_KEYWORDS   if kw in q)
+
+    best = max(motor_hits, health_hits, home_hits)
+    if best == 0:
+        return None  # General query — search across all domains
+    if motor_hits == best:
+        return "motor_insurance"
+    if health_hits == best:
+        return "health_insurance"
+    return "home_insurance"
+
+
+def _domain_to_category(domain: str) -> str:
+    mapping = {
+        "motor_insurance": "motor",
+        "health_insurance": "health",
+        "home_insurance": "home",
+        "general_insurance": "general",
+    }
+    return mapping.get(domain, domain.replace("_insurance", ""))
+
+
+def _is_valid_uuid(val: str) -> bool:
+    try:
+        uuid.UUID(val)
+        return True
+    except (ValueError, AttributeError):
+        return False

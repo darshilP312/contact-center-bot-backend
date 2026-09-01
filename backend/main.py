@@ -5,7 +5,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from starlette.websockets import WebSocketState
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
-from app.database.session import async_session_factory
+from app.database.session import async_session_factory, engine, Base
 from app.database.redis import get_redis_client, close_redis
 from app.api.v1.routes import conversations, customers, analytics, crm, billing, scheduling, auth
 from app.api.websocket.broadcast import manager
@@ -42,24 +42,31 @@ async def _ttl_loop():
             logger.error("Error in TTL loop: %s", exc)
 
 @asynccontextmanager
-
 async def lifespan(app: FastAPI):
-    await get_redis_client()
-    async with async_session_factory() as db:
-        from app.orchestrator.rag.seeder import seed_knowledge_base
-        seeded = await seed_knowledge_base(db)
-        logger.info("Knowledge base ready: %d documents seeded", seeded)
+    # Ensure all tables exist in PostgreSQL
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+    logger.info("Database tables verified/created")
 
-    # Pre-warm the SentenceTransformer embedding model so the first voice turn
-    # doesn't block the event loop for 2-4 seconds during cold model load.
+    await get_redis_client()
+
+    # Initialize the production RAG engine (ChromaDB + FAISS + Redis caching).
+    # Loads all 19 KB files from app/orchestrator/rag/data/knowledge_base/ — motor, health, home.
+    # Idempotent: skips ChromaDB upsert if already indexed from a prior run.
     try:
-        from app.orchestrator.rag.embedder import TextEmbedder
-        import asyncio as _asyncio
-        _embedder = TextEmbedder()
-        await _embedder.embed("warmup")
-        logger.info("Embedding model pre-warmed and ready")
+        from app.orchestrator.rag import rag_engine
+        rag_status = await rag_engine.initialize()
+        logger.info(
+            "RAG engine ready: %d chunks loaded, %d upserted | "
+            "ChromaDB=%s FAISS=%s Redis=%s",
+            rag_status.get("documents_loaded", 0),
+            rag_status.get("chromadb_upserted", 0),
+            rag_status.get("chromadb", "?"),
+            rag_status.get("faiss", "?"),
+            rag_status.get("redis", "?"),
+        )
     except Exception as exc:
-        logger.warning("Embedder pre-warm failed (non-fatal): %s", exc)
+        logger.warning("RAG engine initialization failed (non-fatal): %s", exc)
 
     global _ttl_task
     _ttl_task = asyncio.create_task(_ttl_loop())

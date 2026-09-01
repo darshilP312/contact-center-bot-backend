@@ -1,5 +1,7 @@
 node_modules/
 .chroma_db/
+**/chroma_db/
+*.sqlite3
 __pycache__/
 *.pyc
 venv/
