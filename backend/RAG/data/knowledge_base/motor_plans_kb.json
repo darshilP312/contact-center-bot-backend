@@ -1,0 +1,168 @@
+{
+  "domain": "motor_insurance",
+  "version": "2.0",
+  "title": "Motor Insurance Plans — Full FAQ & Comparison Knowledge Base",
+  "description": "Covers Motor Third Party, Comprehensive, and Comprehensive Plus plan comparisons, IDV, NCB, add-ons, claim process, exclusions, and all common customer questions.",
+  "sections": [
+    {
+      "id": "motor_plan_comparison",
+      "title": "Motor Insurance Plan Comparison — Third Party vs Comprehensive vs Comprehensive Plus",
+      "content": "SecureShield offers three motor plans: Third Party (₹2,499/quarter), Comprehensive (₹8,999/quarter), and Comprehensive Plus (₹11,999/quarter). Third Party covers only legal liability for injuries/deaths/property damage to third parties — it does NOT cover the insured vehicle. Comprehensive covers both own vehicle damage AND third-party liability, with add-ons available separately. Comprehensive Plus bundles Zero Depreciation, Engine Protection, Return to Invoice, Consumables, Tyre Protect, Key Replacement, and RSA all as standard — no extra premium needed. PA cover for owner-driver: TP and Comprehensive give ₹15L, Comprehensive Plus gives enhanced ₹25L.",
+      "keywords": ["motor plan comparison", "third party vs comprehensive", "which motor plan", "comprehensive plus vs comprehensive", "motor insurance difference"],
+      "faqs": [
+        {
+          "question": "What is the difference between Third Party, Comprehensive, and Comprehensive Plus motor insurance?",
+          "answer": "Third Party (₹2,499/qtr): Covers ONLY legal liability for third-party injury/death/property damage. Does NOT cover own vehicle. Mandatory by law. Comprehensive (₹8,999/qtr): Covers own vehicle damage + third-party liability. Add-ons like Zero Dep are optional extra. Comprehensive Plus (₹11,999/qtr): Everything in Comprehensive PLUS Zero Dep, Engine Protection, RTI, Consumables, Tyre Protect, Key Replacement, and Unlimited RSA — all included. Enhanced PA cover of ₹25 Lakhs."
+        },
+        {
+          "question": "Is Third Party motor insurance enough?",
+          "answer": "Third Party is the legal minimum but it does NOT cover your own vehicle damage. If your car is in an accident, floods, or stolen, Third Party pays nothing for your vehicle repairs. For full protection, Comprehensive or Comprehensive Plus is strongly recommended."
+        },
+        {
+          "question": "What is included in Comprehensive Plus that is NOT in Comprehensive?",
+          "answer": "Comprehensive Plus includes, at no extra premium: Zero Depreciation (unlimited claims), Engine & Gearbox Protection, Return to Invoice on total loss, Consumables Cover, Tyre Protect, Key & Lock Replacement (₹25,000/year), Enhanced RSA (100km tow vs 50km), Hotel stay benefit, Hire Car allowance (₹1,500/day), NCB Protection (1 free claim/year), and Enhanced PA of ₹25 Lakhs."
+        }
+      ]
+    },
+    {
+      "id": "third_party_motor",
+      "title": "Motor Third Party Policy — Coverage and Claims",
+      "content": "Motor Third Party Liability covers: (1) Unlimited legal liability for injury to or death of any third party caused by the insured vehicle — as determined by the Motor Accident Claims Tribunal (MACT). (2) Third party property damage up to ₹7,50,000 per accident. (3) Compulsory Personal Accident cover of ₹15 Lakhs for the registered owner-driver. The Company appoints a legal representative to defend all MACT proceedings. The insured must NOT make any admission of liability or direct payment to the claimant without insurer's authorization. FIR must be filed immediately for accidents involving injury or death.",
+      "keywords": ["third party insurance", "TP insurance", "MACT claim", "third party property damage", "7.5 lakh property", "unlimited liability", "compulsory insurance"],
+      "faqs": [
+        {
+          "question": "What does motor Third Party insurance cover?",
+          "answer": "Third Party covers: (1) Unlimited legal liability for injury or death of any third party, (2) Third party property damage up to ₹7,50,000 per accident, (3) Personal accident cover of ₹15 Lakhs for the registered owner-driver. It does NOT cover any damage to your own vehicle."
+        },
+        {
+          "question": "If I hit someone's car and damage it, will my insurance pay?",
+          "answer": "Yes. Third Party insurance covers damage you cause to another person's vehicle or property up to ₹7,50,000 per accident. For death or injury to any person, the liability is unlimited as determined by the MACT or court."
+        },
+        {
+          "question": "What is the owner-driver Personal Accident cover in motor insurance?",
+          "answer": "Compulsory PA cover provides ₹15,00,000 (₹15 Lakhs) for the registered owner-driver in case of: Death (100% = ₹15L), Permanent Total Disablement (100% = ₹15L), Loss of both limbs/eyes (100% = ₹15L), Loss of one limb or one eye (50% = ₹7.5L). The driver must hold a valid licence."
+        },
+        {
+          "question": "What should I do immediately after a road accident?",
+          "answer": "Immediately: (1) Stop the vehicle — leaving the scene is an offence. (2) File an FIR at the nearest Police Station for injury/death accidents. (3) Call SecureShield helpline within 24 hours. (4) Do NOT admit liability or make any payment to the third party without insurer approval. (5) Cooperate with Police investigation."
+        },
+        {
+          "question": "How long is Third Party motor insurance valid for a new car?",
+          "answer": "For new cars, Third Party insurance must be purchased for 3 years at the time of registration (as per Supreme Court mandate). For new two-wheelers, it is 5 years. Renewals after the initial bundled period revert to annual renewal."
+        }
+      ]
+    },
+    {
+      "id": "comprehensive_motor",
+      "title": "Motor Comprehensive Policy — Coverage and Add-Ons",
+      "content": "Comprehensive motor insurance covers own vehicle loss or damage from: accidents/collision, fire/explosion, theft, riot/vandalism, natural disasters (flood, earthquake, cyclone, hailstorm, landslide), and transit damage. The Insured Declared Value (IDV) is the maximum own-damage claim payable. For partial loss, depreciation is deducted on parts (50% on rubber/plastic, 5–50% on metal based on age). Vehicle is declared Total Loss or CTL when repair cost exceeds 75% of IDV. Zero Depreciation, Engine Protection, RSA, RTI, Consumables, and Tyre Protect are available as add-ons at extra premium. NCB provides up to 50% discount on OD premium for claim-free years.",
+      "keywords": ["comprehensive motor coverage", "own damage cover", "OD cover", "IDV", "insured declared value", "NCB motor", "no claim bonus", "total loss", "CTL"],
+      "faqs": [
+        {
+          "question": "What is covered under Comprehensive motor insurance?",
+          "answer": "Own vehicle damage from: accidents, fire, explosion, theft, burglary, riots, vandalism, floods, cyclone, earthquake, hailstorm, landslide, and transit damage. PLUS all Third Party liability (injury/death/property) and PA cover for the owner-driver. Add-ons like Zero Dep, Engine Protect, RTI are optional extras."
+        },
+        {
+          "question": "Is car theft covered under motor insurance?",
+          "answer": "Yes, vehicle theft is covered under Comprehensive motor insurance. If the vehicle is stolen, you must file an FIR immediately, inform SecureShield within 24 hours, and the full IDV (or original invoice price with RTI cover) is paid after Police investigations are complete."
+        },
+        {
+          "question": "Is flood damage to my car covered?",
+          "answer": "Flood damage (external — car submerged in floodwater, swept by inundation) IS covered under Comprehensive insurance. However, engine/gearbox damage due to driving through flooded water (hydrostatic lock) is EXCLUDED unless you have the Engine Protection Add-On."
+        },
+        {
+          "question": "What is IDV (Insured Declared Value) in motor insurance?",
+          "answer": "IDV is the current market value of your vehicle — calculated as manufacturer's list price minus depreciation based on vehicle age. It is the maximum amount payable for total loss or theft claims. New cars: IDV = List price less 5–20% depreciation. Older vehicles: IDV reduces progressively up to 50% by year 5."
+        },
+        {
+          "question": "What is No Claim Bonus (NCB) in motor insurance?",
+          "answer": "NCB is a discount on your OD (own damage) premium for each claim-free year: 1 year = 20%, 2 years = 25%, 3 years = 35%, 4 years = 45%, 5+ years = 50% (maximum). NCB belongs to the policyholder, not the vehicle — you keep it if you sell the car and buy a new one."
+        },
+        {
+          "question": "Does NCB reset to zero if I make a claim?",
+          "answer": "Yes, if you make an own-damage claim, your NCB resets to 0% at the next renewal. To protect your NCB, you can purchase the NCB Protection add-on (included free in Comprehensive Plus), which allows one claim per year without NCB forfeiture."
+        },
+        {
+          "question": "What is the compulsory deductible in motor insurance?",
+          "answer": "Compulsory deductible is the mandatory amount you pay per claim: ₹1,000 for cars up to 1500cc, ₹2,000 for cars above 1500cc. The insurer pays the approved claim amount minus the compulsory deductible. Zero Dep add-on does not eliminate this deductible."
+        },
+        {
+          "question": "What happens if my car is a total loss?",
+          "answer": "A vehicle is Constructive Total Loss (CTL) when repair cost > 75% of IDV. In that case, the full IDV (less salvage value) is paid. With Return to Invoice (RTI) add-on, the original invoice price (ex-showroom + registration + road tax) is paid instead of the lower depreciated IDV."
+        }
+      ]
+    },
+    {
+      "id": "comprehensive_plus_motor",
+      "title": "Motor Comprehensive Plus — All Bundled Benefits",
+      "content": "Comprehensive Plus is the premium motor plan that bundles all add-ons as standard: Zero Depreciation (unlimited claims, no 2-claim limit), Engine & Gearbox Protection (hydrostatic lock covered), Return to Invoice on CTL or theft (original invoice price paid), Consumables Cover (oil, bolts, coolant), Tyre Protect (4 tyres/year), Key & Lock Replacement (₹25,000/year), Extended RSA (100km towing, hotel stay, hire car), NCB Protection (1 free claim/year without NCB reset), and Enhanced PA ₹25 Lakhs for owner-driver + ₹5 Lakhs for paid driver. EV battery cover up to ₹5 Lakhs. Priority 24-hour surveyor and 5-working-day repair SLA with hire car benefit (₹1,500/day if repair takes longer).",
+      "keywords": ["comprehensive plus", "all add-ons included", "unlimited zero dep", "RTI included", "engine protection included", "EV battery cover", "NCB protection included"],
+      "faqs": [
+        {
+          "question": "What does Comprehensive Plus motor insurance cover?",
+          "answer": "Everything in Comprehensive PLUS Zero Dep (unlimited claims), Engine/Gearbox Protection, Return to Invoice on total loss/theft, Consumables Cover, Tyre Protect (4 tyres/year), Key & Lock Replacement (₹25K/year), Enhanced RSA (100km tow, hotel benefit, hire car ₹1,500/day), NCB Protection, and Enhanced PA of ₹25 Lakhs. EV battery covered up to ₹5 Lakhs."
+        },
+        {
+          "question": "In Comprehensive Plus, how many Zero Dep claims can I make?",
+          "answer": "Under Comprehensive Plus, there is no limit on Zero Dep claims per year — you can make unlimited Zero Depreciation claims. In contrast, standard Comprehensive allows only 2 Zero Dep claims per year."
+        },
+        {
+          "question": "Does Comprehensive Plus cover electric vehicle (EV) batteries?",
+          "answer": "Yes, Comprehensive Plus includes EV battery cover for electric vehicles — up to ₹5,00,000 for battery replacement arising from an insured peril (fire, accident, flood). Standard Comprehensive policies may exclude EV battery damage."
+        },
+        {
+          "question": "What is the hire car benefit in Comprehensive Plus?",
+          "answer": "If your vehicle is in a network garage for repair for more than 24 hours, SecureShield provides a hire car allowance of ₹1,500 per day (maximum 7 days per claim) to cover your alternate transport costs while your vehicle is being repaired."
+        },
+        {
+          "question": "Does Comprehensive Plus cover damage if I drive through a flooded road?",
+          "answer": "Yes. Comprehensive Plus includes Engine & Gearbox Protection as a standard cover — which specifically covers hydrostatic lock damage from driving through flooded or waterlogged roads. Without this cover, engine damage from water ingression is excluded."
+        }
+      ]
+    },
+    {
+      "id": "motor_claims_process",
+      "title": "Motor Insurance Claims Process — Steps and Documents",
+      "content": "Accidental damage claim: Notify SecureShield within 48 hours (Comprehensive Plus: 24 hours) via helpline. An IRDAI-certified surveyor is appointed within 24 hours. Surveyor assesses damage and approves repair estimate. Cashless repair at 6,800+ authorized garages: insurer pays the garage directly; insured pays only compulsory deductible and non-covered consumables. Reimbursement at non-network garages: get surveyor approval, pay in full, submit original invoice/bills within 30 days, reimbursement in 7–10 working days. Theft claim: File FIR immediately + notify SecureShield within 24 hours. IDV paid after investigation. Required documents for accident claim: FIR (if applicable), driving licence, RC copy, original repair invoice, surveyor's report.",
+      "keywords": ["motor claim process", "how to claim motor insurance", "surveyor", "cashless garage", "accident claim documents", "theft claim documents", "48 hours intimation"],
+      "faqs": [
+        {
+          "question": "How do I claim motor insurance after an accident?",
+          "answer": "Step 1: Notify SecureShield within 48 hours (24 hrs for Comprehensive Plus) via helpline. Step 2: Surveyor is appointed within 24 hours. Step 3: Take vehicle to cashless network garage or get surveyor approval for non-network repairs. Step 4: Insurer pays the garage directly (cashless) or reimburses you within 7–10 days (non-network)."
+        },
+        {
+          "question": "What documents are required for a motor insurance claim?",
+          "answer": "Required: (1) FIR copy (for theft, third-party accidents), (2) Driving licence of driver at time of accident, (3) Vehicle Registration Certificate (RC), (4) Original repair invoice and parts bill, (5) Survey report, (6) Claim form filled and signed, (7) Bank details for reimbursement."
+        },
+        {
+          "question": "How long does it take to settle a motor insurance claim?",
+          "answer": "Cashless repairs: Work starts after surveyor approval (within 24 hrs of registration). Comprehensive Plus has a 5-working-day repair SLA. Reimbursement claims: Settled within 7–10 working days of complete document submission. Theft claims: Settled after Police investigation and issuance of non-traceable certificate, typically within 30–45 days."
+        },
+        {
+          "question": "Do I need an FIR for every motor insurance claim?",
+          "answer": "FIR is mandatory for: (1) Theft of vehicle, (2) Any accident involving third-party injury or death. FIR is NOT required for minor own-damage claims like a dent, scratch, or minor collision with no third-party involvement."
+        }
+      ]
+    },
+    {
+      "id": "motor_add_ons_general",
+      "title": "Motor Insurance Add-Ons Explained",
+      "content": "Motor insurance add-ons enhance a standard Comprehensive policy. Key add-ons: (1) Zero Depreciation — no depreciation on parts, 100% replacement cost. (2) Engine Protection — covers hydrostatic lock, oil leakage damage. (3) Return to Invoice — original invoice paid on total loss, not IDV. (4) RSA (Roadside Assistance) — towing, jump-start, fuel, locksmith. (5) Consumables Cover — nuts, bolts, engine oil, coolant covered in claims. (6) Tyre Protect — covers tyre burst or cut without a simultaneous accident. (7) Key & Lock Replacement — lost/stolen key replacement up to ₹25,000. (8) NCB Protection — preserve NCB even after one claim. (9) Passenger PA — personal accident cover for all passengers. In Comprehensive Plus, ALL these add-ons are bundled at no extra cost.",
+      "keywords": ["motor add-ons", "zero dep add-on", "engine protection add-on", "RTI add-on", "roadside assistance", "tyre protect", "consumables cover", "NCB protection", "passenger PA"],
+      "faqs": [
+        {
+          "question": "What add-ons are available with motor insurance?",
+          "answer": "Available add-ons: Zero Depreciation (no depreciation on parts), Engine Protection (hydrostatic lock), Return to Invoice (original price on total loss), RSA (towing/jump-start/fuel), Consumables Cover, Tyre Protect, Key & Lock Replacement, NCB Protection, and Passenger PA Cover. All of these are included free in Comprehensive Plus."
+        },
+        {
+          "question": "Is roadside assistance available if my car breaks down?",
+          "answer": "Yes, with the RSA add-on or Comprehensive Plus: Free towing up to 50 km (100 km with Plus), on-site repairs for minor breakdowns, flat tyre change, battery jump-start, emergency fuel delivery (up to 5 litres), and key lockout assistance — all available 24x7 across India."
+        },
+        {
+          "question": "Is tyre damage covered in motor insurance?",
+          "answer": "In standard Comprehensive: Tyre damage is only covered if the vehicle is also damaged in the same accident. Standalone tyre burst or damage is NOT covered without the Tyre Protect add-on. In Comprehensive Plus: Tyre Protect is included — covers up to 4 tyres per year for burst, cut, or sidewall damage even without a simultaneous accident."
+        }
+      ]
+    }
+  ]
+}

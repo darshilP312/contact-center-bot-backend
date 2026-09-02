@@ -1,0 +1,132 @@
+{
+  "domain": "general_insurance",
+  "version": "1.0",
+  "title": "SecureShield Insurance — General Company Info, Buying, Renewal, and Cross-Policy FAQ",
+  "description": "Covers SecureShield company overview, how to buy any policy, payment options, policy delivery, customer service contacts, cross-policy scenarios, multiple policy rules, and insurance basics.",
+  "sections": [
+    {
+      "id": "company_overview",
+      "title": "SecureShield Insurance — Company Overview and Products",
+      "content": "SecureShield is a full-service insurance company regulated by IRDAI (Insurance Regulatory and Development Authority of India) offering Health Insurance, Motor Insurance, and Home Insurance. Health Insurance products: Health Shield Basic, Health Shield Gold, Health Shield Premium. Motor Insurance products: Motor Third Party Liability, Motor Comprehensive, Motor Comprehensive Plus. Home Insurance products: Home Protector Basic, Home Protector Elite. All policies are issued in digital form via email and the SecureShield mobile app within 48 hours of policy purchase. SecureShield operates a 24x7 customer helpline and claims desk. TPA (Third Party Administrator) for health: SecureHealth TPA Services Ltd. Network hospitals: 10,000+ (Premium), 7,500+ (Gold), 4,500+ (Basic). Network garages: 8,500+ (Comprehensive Plus), 6,800+ (Comprehensive).",
+      "keywords": ["SecureShield", "insurance company", "IRDAI registered", "products offered", "what policies available", "SecureShield overview", "company info"],
+      "faqs": [
+        {
+          "question": "What types of insurance does SecureShield offer?",
+          "answer": "SecureShield offers: (1) Health Insurance — Health Shield Basic, Gold, and Premium. (2) Motor Insurance — Third Party, Comprehensive, and Comprehensive Plus. (3) Home Insurance — Home Protector Basic and Elite. All policies are regulated by IRDAI and issued digitally."
+        },
+        {
+          "question": "Is SecureShield registered with IRDAI?",
+          "answer": "Yes, SecureShield General Insurance Company Ltd. and SecureShield Health Insurance Company Ltd. are registered with the Insurance Regulatory and Development Authority of India (IRDAI). All policies comply with IRDAI guidelines and circulars."
+        },
+        {
+          "question": "How do I contact SecureShield customer care?",
+          "answer": "SecureShield 24x7 helpline: 1800-XXX-XXXX (toll-free). Claims desk: 1800-XXX-YYYY. Email: support@secureshield.in. Mobile App: SecureShield Insurance App (iOS and Android). Chat: Live chat available on website and app during business hours."
+        }
+      ]
+    },
+    {
+      "id": "how_to_buy",
+      "title": "How to Buy a SecureShield Insurance Policy",
+      "content": "Buying a SecureShield policy is a fully digital process: Step 1 — Visit the SecureShield website or open the app. Step 2 — Select the insurance type (Health/Motor/Home) and plan (Basic/Gold/Premium or Comprehensive/Plus). Step 3 — Enter personal details (name, DOB, Aadhaar/PAN), vehicle details (for motor), or property details (for home). Step 4 — Declare pre-existing health conditions accurately (for health insurance) — non-disclosure leads to claim rejection later. Step 5 — Choose sum insured, add-ons, and coverage options. Step 6 — Review quote and pay premium via UPI, Credit/Debit Card, NetBanking, or EMI. Step 7 — Policy is issued digitally via email and app within 48 hours. Health insurance: Medical underwriting may be required for sum insured above ₹25 Lakhs or for applicants above 55 years. Motor insurance: Vehicle inspection may be required for vehicles above 5 years old or if renewing after a lapse.",
+      "keywords": ["how to buy insurance", "purchase policy", "online insurance", "buy health insurance", "buy car insurance", "buy home insurance", "policy issuance", "premium payment"],
+      "faqs": [
+        {
+          "question": "How do I buy a SecureShield health insurance policy?",
+          "answer": "Visit SecureShield website or app → Choose Health Shield plan (Basic/Gold/Premium) → Enter personal details and declare any pre-existing conditions → Select sum insured and optional add-ons → Pay premium via UPI/Card/NetBanking → Policy issued digitally within 48 hours. For sum insured above ₹25L or age 55+, medical tests may be required."
+        },
+        {
+          "question": "What payment methods are accepted for premium?",
+          "answer": "Accepted payment methods: UPI (GPay, PhonePe, Paytm), Credit Card (all major banks), Debit Card (Visa, Mastercard, RuPay), Net Banking (50+ banks), and Cheque/DD (offline branches only). EMI options available for annual premiums above ₹5,000 on select credit cards."
+        },
+        {
+          "question": "How long does it take to get the policy document after payment?",
+          "answer": "Policy document (digital PDF) and health insurance card are issued within 48 hours of payment. For motor insurance, the policy is typically issued within 2 hours for standard cases. For home insurance with high sum insured (above ₹50L) or older buildings requiring inspection, issuance may take 2–3 working days."
+        },
+        {
+          "question": "Do I need a medical test to buy health insurance?",
+          "answer": "Medical tests are typically required for: Health insurance sum insured above ₹25 Lakhs, applicants above 55 years of age, or if existing health conditions are disclosed. For Health Shield Basic and Gold with standard sum insured (below ₹10L) and applicants below 55 years, no medical test is usually required."
+        }
+      ]
+    },
+    {
+      "id": "multiple_policies",
+      "title": "Multiple Policies, Portability, and Policy Coordination",
+      "content": "Having multiple health insurance policies is allowed and common. IRDAI mandates that policyholders can choose which health insurer pays first. If one policy's sum insured is exhausted, the balance is claimed from the second policy. This is called contribution — insurers share the claim proportionately. For motor insurance, only ONE Comprehensive/TP policy can be active per vehicle at a time — having two motor policies for the same vehicle is not permitted. For home insurance, multiple home policies on the same property may lead to contribution clauses — total payout cannot exceed actual loss (no profit from insurance). Portability: Health insurance can be ported from any IRDAI-registered insurer to SecureShield with credit for waiting periods already served. Documents needed for portability: existing policy certificate, 3-year claims history, portability request form submitted to new insurer at least 45 days before renewal.",
+      "keywords": ["multiple health insurance", "two health policies", "portability health", "porting insurance", "contribution clause", "can I have two policies", "switch insurance company"],
+      "faqs": [
+        {
+          "question": "Can I have two health insurance policies?",
+          "answer": "Yes. You can hold multiple health insurance policies from different companies simultaneously. If you need to claim more than one policy's sum insured (for a very large medical bill), you can file claims with both — the total payout cannot exceed actual medical expenses. Inform both insurers of the other policy."
+        },
+        {
+          "question": "How does portability work if I switch to SecureShield from another insurer?",
+          "answer": "To port to SecureShield: Submit a portability request at least 45 days before your current policy's renewal date. Provide: current policy certificate, 3 years of claims history, and portability request form. SecureShield will credit your waiting periods already served with the previous insurer. Premium may differ based on SecureShield's underwriting."
+        },
+        {
+          "question": "Can I have two motor insurance policies for the same car?",
+          "answer": "No. Under IRDAI regulations, only ONE active comprehensive/TP motor insurance policy is permitted for any vehicle at a time. Duplicate motor policies are invalid and claims cannot be made on both simultaneously."
+        },
+        {
+          "question": "I have group health insurance from my employer plus a personal policy. How do claims work?",
+          "answer": "You can claim from both. Typically: Use the group policy (employer) for the primary claim. If the claim exceeds the group policy's limit, claim the balance from your personal Health Shield policy. Inform both insurers and submit the settlement letter from the first insurer with the balance claim to the second."
+        }
+      ]
+    },
+    {
+      "id": "insurance_basics",
+      "title": "Insurance Basics and Terminology Explained",
+      "content": "Key insurance terms: Sum Insured / IDV — Maximum amount the insurer will pay. Premium — Amount you pay for insurance coverage. Deductible — Amount you pay before insurer pays. Co-payment — Percentage of claim you pay (e.g., 20% copay means you pay 20%, insurer pays 80%). Waiting Period — Period at the start of a policy during which certain claims are not paid. Exclusion — Conditions or events not covered by the policy. Endorsement — A change or addition to an existing policy (e.g., adding a CNG kit, changing address). Claim Settlement Ratio (CSR) — Percentage of claims settled by an insurer in a year; higher CSR means better claim payment record. TPA (Third Party Administrator) — A company that manages health insurance claims on behalf of the insurer. Network Hospital/Garage — Empanelled by insurer for cashless treatment/repair — no upfront payment by customer. Reimbursement — Non-cashless claim where customer pays first and is repaid by insurer later.",
+      "keywords": ["insurance terms", "what is sum insured", "what is premium", "what is deductible", "what is co-payment", "what is endorsement", "TPA meaning", "network hospital meaning", "claim settlement ratio", "CSR insurance"],
+      "faqs": [
+        {
+          "question": "What is the difference between sum insured and premium?",
+          "answer": "Sum insured is the maximum amount the insurance company will pay for your claims in a policy year (e.g., ₹5 Lakhs for Health Shield Gold). Premium is the amount you pay to the insurance company to buy this coverage (e.g., ₹7,499 per quarter for Gold). Higher sum insured generally means higher premium."
+        },
+        {
+          "question": "What does 'waiting period' mean in insurance?",
+          "answer": "Waiting period is the time from policy start during which certain claims are not payable. In health insurance: 30-day initial wait, 24–36 months for pre-existing diseases, 24 months for specific ailments. In home insurance: No waiting period — coverage starts from policy start date. In motor insurance: No waiting period — coverage is immediate."
+        },
+        {
+          "question": "What is an endorsement in insurance?",
+          "answer": "An endorsement is an official amendment added to your existing policy. Examples: Adding a new family member, changing the registered address, adding a CNG kit to car insurance, increasing sum insured at renewal, or changing the nominee. Contact SecureShield customer care or use the app to raise an endorsement request."
+        },
+        {
+          "question": "What is TPA in health insurance?",
+          "answer": "TPA (Third Party Administrator) is a company that processes health insurance claims on behalf of the insurer. SecureShield uses SecureHealth TPA Services Ltd. The TPA operates the cashless desk at network hospitals, processes pre-authorization requests, and manages claim documents. You interact with the TPA at the hospital for cashless claims."
+        },
+        {
+          "question": "What is a good Claim Settlement Ratio (CSR) for an insurance company?",
+          "answer": "Claim Settlement Ratio (CSR) is the percentage of claims an insurer settles out of all claims received in a year. A CSR above 95% is considered excellent. A CSR above 98% is outstanding. SecureShield's CSR and IRDAI annual reports are publicly available on the IRDAI website and SecureShield's website."
+        }
+      ]
+    },
+    {
+      "id": "policy_documents_changes",
+      "title": "Policy Documents, Changes, Cancellation, and Nominee",
+      "content": "Policy document: Issued digitally within 48 hours via email and SecureShield app. Physical copy available on request via courier. Policy number: Available in welcome email, app, and printed on the policy card. Nominee: Beneficiary who receives claim payout in case of policyholder's death. Nominee can be changed anytime by submitting a nominee change form via app or customer care. Policy cancellation: Policy can be cancelled within the free look period (30 days from issue) for a full refund minus pro-rata premium for coverage used. Cancellation after free look period: Refund is on short-rate basis (less than pro-rata due to administrative charges). Policy changes mid-term: Sum insured upgrades, adding dependants, changing vehicle accessories — processed via endorsement request. Policy copies: Duplicate policy certificate available instantly from SecureShield app. CKYC: All policyholders undergo KYC verification at the time of policy purchase per IRDAI guidelines.",
+      "keywords": ["policy document", "policy copy", "duplicate policy", "cancel policy", "refund premium", "change nominee", "policy changes", "endorsement request", "KYC insurance"],
+      "faqs": [
+        {
+          "question": "How do I get a copy of my insurance policy document?",
+          "answer": "Your policy document is sent to your registered email within 48 hours of purchase. You can also download it anytime from the SecureShield app (Policy Details section). For a duplicate physical policy booklet, call customer care or visit the nearest SecureShield branch."
+        },
+        {
+          "question": "Can I cancel my insurance policy and get a refund?",
+          "answer": "Free Look Period (30 days from issue): Full premium refund minus any risk cover used and stamp duty. After free look period: Refund is on short-rate basis — you lose a processing fee and the premium for period of coverage used. The refund is credited to your original payment method within 10–15 working days."
+        },
+        {
+          "question": "How do I change the nominee on my insurance policy?",
+          "answer": "Log in to the SecureShield app → My Policies → Select Policy → Change Nominee. Enter the new nominee's name, relationship, DOB, and Aadhaar number. Submit the request — the nominee change is processed within 2–3 working days. Alternatively, submit a nominee change form at any SecureShield branch."
+        },
+        {
+          "question": "Can I increase my sum insured during the policy term?",
+          "answer": "Mid-term sum insured increase is generally not allowed. Sum insured can be increased at the time of annual renewal. The increased sum insured may attract fresh underwriting (medical tests or vehicle inspection). For health insurance, the PED waiting period countdown does NOT restart for the existing sum insured amount."
+        },
+        {
+          "question": "I lost my insurance policy card. How do I get a new one?",
+          "answer": "Your digital policy card is available on the SecureShield app under 'My Policies' — you can show this on your phone at hospitals or garages for cashless service. For a new physical card, call customer care (1800-XXX-XXXX) or raise a request via the app. Physical cards are dispatched within 5–7 working days."
+        }
+      ]
+    }
+  ]
+}

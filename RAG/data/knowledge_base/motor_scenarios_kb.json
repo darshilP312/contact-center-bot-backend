@@ -1,0 +1,136 @@
+{
+  "domain": "motor_insurance",
+  "version": "2.1",
+  "title": "Motor Insurance — Real-World Scenarios, Edge Cases, and Operational FAQ",
+  "description": "Covers accident scenarios, parking damage, NCB transfer, IDV disputes, licence issues, driving other vehicles, EV insurance, and common motor claim situations.",
+  "sections": [
+    {
+      "id": "accident_scenarios",
+      "title": "Common Accident and Damage Scenarios",
+      "content": "Scenario: Car parked on road, hit by another vehicle — Own damage is covered under Comprehensive insurance. File FIR only if the at-fault vehicle is identified (for third-party recovery). Scenario: Car hit a pothole and damaged axle — Own damage from road accident is covered under Comprehensive. Scenario: Scratched while parking in a tight spot — Own damage covered; minor dents and scratches from parking accidents are claimable. However, frequent small claims affect NCB. Consider self-paying small claims to protect NCB. Scenario: Hail storm damaged the car roof and hood — Natural disaster (hailstorm) is covered under Comprehensive. Scenario: Car slipped on oil and hit a divider — Covered as an accidental collision under own damage. Scenario: Another car reversed into mine in a parking lot — Own damage claim under Comprehensive; insurer can also pursue recovery from at-fault driver's TP insurance. Scenario: Vandalism — someone keyed my car — Malicious damage is covered under Comprehensive insurance.",
+      "keywords": ["parked car damaged", "hit and run", "pothole damage", "hailstorm car", "parking damage", "vandalism car", "scratch claim", "natural disaster car"],
+      "faqs": [
+        {
+          "question": "My car was hit while it was parked and the other driver fled. Am I covered?",
+          "answer": "Yes. Under Comprehensive motor insurance, your own vehicle damage is covered regardless of who caused it. For a hit-and-run (at-fault driver fled), file a police complaint for record purposes and intimate SecureShield within 48 hours. Your own damage claim will be processed from your Comprehensive cover. Your NCB will reset after the claim."
+        },
+        {
+          "question": "My car was damaged by a hailstorm. Is it covered?",
+          "answer": "Yes. Hailstorm, storm, cyclone, and other natural calamities are covered perils under Comprehensive motor insurance. Document the damage with photos, call the helpline within 48 hours, and a surveyor will assess the damage. Roof dents, bonnet damage, and broken windscreens from hailstorm are all covered."
+        },
+        {
+          "question": "Is car windscreen damage covered?",
+          "answer": "Yes. Windscreen (and all fixed glass) replacement is covered under Comprehensive motor insurance with ZERO depreciation — even without the Zero Depreciation add-on. Glass is the only part that has 0% depreciation in all standard Comprehensive policies."
+        },
+        {
+          "question": "Someone scratched my car in a parking lot. Should I claim insurance?",
+          "answer": "You can claim, but consider the trade-off: a minor scratch repair may cost ₹3,000–8,000, but making a claim resets your NCB (No Claim Bonus) which could save ₹5,000–15,000+ on your next year's premium. For small scratch/dent claims, paying out-of-pocket to protect NCB is usually the wiser financial choice."
+        },
+        {
+          "question": "My car's tyre burst while driving and I lost control, causing an accident. What's covered?",
+          "answer": "The accident damage to your vehicle is covered under Comprehensive own damage. The tyre itself is only covered if it was damaged in the same accident (which it was). If you have Tyre Protect add-on (standard in Comprehensive Plus), the tyre is also covered. Third-party damage caused by the accident is covered under TP liability."
+        },
+        {
+          "question": "My car got damaged in a flood. The engine won't start. What do I do?",
+          "answer": "Step 1: DO NOT try to start the engine if the car was submerged — this causes hydrostatic lock (water compresses in cylinders, bending connecting rods — very expensive damage). Step 2: Call SecureShield helpline immediately. Step 3: The flood/inundation damage to exterior, electronics, seats is covered under Comprehensive. Step 4: Engine hydrostatic lock damage is ONLY covered if you have Engine Protection add-on (standard in Comprehensive Plus). Without it, engine internal damage from water ingression is excluded."
+        }
+      ]
+    },
+    {
+      "id": "ncb_idv_premium",
+      "title": "NCB, IDV, Premium Calculation, and Renewal",
+      "content": "No Claim Bonus (NCB) accumulates with each claim-free year: 20%, 25%, 35%, 45%, 50% at 5+ years. NCB applies only to Own Damage (OD) premium — not to Third Party premium (which is IRDAI regulated). NCB belongs to the policyholder not the vehicle — it transfers when buying a new car using an NCB Certificate. NCB is lost if: a claim is made in the year (resets to 0%), or policy lapses beyond 90 days. NCB Protection add-on (included in Comprehensive Plus) allows one claim per year without NCB reset. IDV (Insured Declared Value) is the market value of the vehicle, also the maximum claim on total loss. IDV decreases year-on-year by the depreciation schedule. Policyholders can negotiate IDV within ±15% of IRDAI guideline value when renewing. Higher IDV = higher premium but better total loss payout. Lower IDV = lower premium but less payout on theft or total loss.",
+      "keywords": ["NCB motor insurance", "no claim bonus", "IDV calculation", "insured declared value", "motor premium calculation", "NCB transfer", "NCB certificate", "NCB loss", "IDV negotiation"],
+      "faqs": [
+        {
+          "question": "What happens to my NCB if I sell my car?",
+          "answer": "NCB belongs to YOU (the insured), not the vehicle. When you sell your car: (1) Cancel or transfer the insurance (TP transfers to the buyer for remaining term). (2) Obtain an NCB Certificate from SecureShield. (3) When you buy a new car within 3 years, present the NCB Certificate to get your accumulated NCB discount on the new policy's OD premium."
+        },
+        {
+          "question": "What is IDV and how does it affect my premium?",
+          "answer": "IDV (Insured Declared Value) is the current market value of your vehicle. It is the maximum amount payable on total loss or theft claims. Higher IDV = higher OD premium but better payout on total loss. Lower IDV = lower premium but less payout if the car is totalled or stolen. You can negotiate IDV within ±15% of the IRDAI guideline schedule."
+        },
+        {
+          "question": "My car is 7 years old. What is my IDV?",
+          "answer": "For vehicles older than 5 years, the IDV is mutually agreed between SecureShield and the insured based on current market value (not a fixed depreciation formula). Typically, a 7-year-old car's IDV is assessed by the surveyor considering the brand, model, condition, and prevailing resale market. Contact SecureShield for an IDV assessment."
+        },
+        {
+          "question": "If I don't make a claim for 5 years, how much do I save?",
+          "answer": "After 5 consecutive claim-free years, NCB reaches its maximum of 50% on OD premium. For example, if your OD premium is ₹20,000/year, you save ₹10,000/year on OD premium due to NCB. This represents significant savings over time — making it financially worthwhile to self-fund small repairs rather than making frequent small claims."
+        },
+        {
+          "question": "Will my NCB reset if I make a claim?",
+          "answer": "Yes, any own-damage claim causes NCB to reset to 0% at the next renewal. With the NCB Protection add-on (included free in Comprehensive Plus), you can make ONE claim per policy year without losing your accumulated NCB. However, two or more claims in a year will still reset NCB even with NCB Protection."
+        }
+      ]
+    },
+    {
+      "id": "driving_licence_exclusions",
+      "title": "Driving Licence, Driver Rules, and Policy Exclusions",
+      "content": "Valid driving licence is mandatory for motor insurance claims to be payable. If the vehicle is driven by an unlicensed driver at the time of accident, ALL insurance claims (OD, TP, PA) are void. This includes: learner's licence holder driving without a licenced supervisor in front seat, expired driving licence (grace period of 30 days after expiry for renewal), minor children driving the vehicle, or driving under licence valid for a different vehicle class (e.g., using a two-wheeler licence to drive a car). Driving under influence of alcohol, drugs, or intoxicants nullifies all coverage. If a hired driver (chauffeur) was driving: their driving licence must be valid. Under Comprehensive Plus, the paid driver's PA cover of ₹5 Lakhs is provided. Commercial use of private vehicle (using personal car for Ola/Uber taxi service) voids the private car policy.",
+      "keywords": ["licence rules motor insurance", "unlicensed driver claim", "drunk driving insurance", "commercial use private car", "chauffeur insurance", "learner licence insurance", "expired licence claim"],
+      "faqs": [
+        {
+          "question": "What if the driver had an expired licence at the time of accident?",
+          "answer": "Claims may be rejected if the driving licence was expired at the time of accident. However, IRDAI guidelines allow a 30-day grace period for licence renewal after expiry. If the accident occurred within the 30-day grace window and the licence has since been renewed, claims may still be considered. Consult SecureShield's claims team for case-by-case assessment."
+        },
+        {
+          "question": "Is a claim covered if the driver was drunk?",
+          "answer": "No. Driving under influence of alcohol, drugs, or any intoxicating substance is a permanent exclusion under all motor insurance policies. Both own-damage and third-party liability claims are void if the driver was found intoxicated (breathalyser test or blood alcohol content above legal limit). PA cover for the owner-driver is also forfeited."
+        },
+        {
+          "question": "Can I use my personal car for Ola or Uber? Will my insurance be valid?",
+          "answer": "No. Using a private vehicle registered as a personal car for commercial hire-and-reward services (Ola, Uber, rapido, or any paid ride-hailing) violates the policy's permitted use clause. Any accident that occurs while the vehicle is being used for commercial carriage will result in claim rejection. You need a commercial vehicle policy for such use."
+        },
+        {
+          "question": "What if my car was driven by my friend or family member and they had an accident?",
+          "answer": "Motor insurance covers the vehicle, not just one specific driver. If your friend or family member was driving your car WITH your permission and they hold a valid driving licence, the claim is fully covered under your Comprehensive policy — for both own damage and third-party liability."
+        },
+        {
+          "question": "Is my car covered if I lend it to a friend without telling the insurance company?",
+          "answer": "Yes, provided your friend holds a valid driving licence and your policy has no named-driver restriction (standard Comprehensive policies do not restrict drivers). The vehicle is covered regardless of who is driving, as long as it's with the owner's consent and the driver is licensed."
+        }
+      ]
+    },
+    {
+      "id": "ev_two_wheeler_commercial",
+      "title": "Electric Vehicles, Two-Wheelers, and Special Vehicle Coverage",
+      "content": "Electric vehicles (EVs) are covered under Comprehensive and Comprehensive Plus motor policies. The IDV for EVs includes the battery pack value. Comprehensive Plus specifically includes EV battery cover up to ₹5 Lakhs for battery damage from fire, accident, or flood. Standard Comprehensive may exclude battery damage — check policy schedule. Two-wheeler insurance (bikes, scooters) follows the same structure: TP mandatory, Comprehensive optional. Compulsory deductible for two-wheelers is ₹500 (vs ₹1,000/₹2,000 for cars). NCB for two-wheelers is same structure (20% to 50%). New two-wheelers require TP for 5 years at registration. Vintage/Classic cars (above 25 years old) require agreed value policies with specialist underwriting — not covered under standard motor plans. CNG-fitted vehicles require CNG kit to be declared and endorsed on the policy; otherwise, CNG-related damage may be excluded.",
+      "keywords": ["electric vehicle insurance", "EV insurance", "two-wheeler insurance", "bike insurance", "CNG car insurance", "vintage car insurance", "EV battery insurance"],
+      "faqs": [
+        {
+          "question": "Is an electric vehicle (EV) like a Tata Nexon EV or MG ZS EV covered?",
+          "answer": "Yes. Electric vehicles are covered under Comprehensive motor insurance. IDV is calculated on the full vehicle price including battery. Comprehensive Plus includes EV battery cover up to ₹5 Lakhs for battery damage from accident, fire, or flood. Charging cable and home charger (if declared) may also be covered as accessories."
+        },
+        {
+          "question": "Does motor insurance cover the EV battery if it catches fire?",
+          "answer": "Under Comprehensive Plus: Yes — EV battery damage from fire, accident, or flood is covered up to ₹5 Lakhs as a bundled benefit. Under standard Comprehensive: Battery coverage depends on the specific policy schedule — confirm at purchase. EV battery fires from manufacturing defects may be subject to the vehicle manufacturer's recall/warranty rather than insurance."
+        },
+        {
+          "question": "Is my CNG-fitted car covered under motor insurance?",
+          "answer": "Yes, if the CNG kit has been officially endorsed on the motor insurance policy. When you install a CNG kit, you must: (1) Get it registered on the RC (Registration Certificate) at the RTO. (2) Inform SecureShield and add a CNG endorsement to your policy. Failure to declare the CNG kit may result in rejection of claims related to CNG system damage or fire from the CNG system."
+        }
+      ]
+    },
+    {
+      "id": "motor_renewal_lapse",
+      "title": "Motor Insurance Renewal, Lapse, and Grace Period",
+      "content": "Motor insurance must be renewed annually (or per the policy term). Driving with an expired motor insurance policy is a traffic offence (fine up to ₹2,000 and/or vehicle impounding). TP insurance: New cars must have 3-year TP (cars) or 5-year TP (two-wheelers) at registration. After initial term, annual renewal. Grace period for motor policy renewal: Most insurers (including SecureShield) offer a 30-day renewal window before strictly lapsing. Driving during this grace window is technically an offence if the policy is not renewed. Vehicle must be inspected if renewal gap exceeds 90 days — OD cover requires physical inspection of vehicle condition before new OD coverage is issued. NCB protection: NCB accumulated is retained for 90 days from policy expiry. If not renewed within 90 days, NCB resets to 0%.",
+      "keywords": ["motor insurance renewal", "expired insurance", "lapsed motor policy", "motor grace period", "reinspection vehicle", "NCB lapse", "driving without insurance"],
+      "faqs": [
+        {
+          "question": "What happens if I drive without motor insurance?",
+          "answer": "Driving without valid insurance is an offence under the Motor Vehicles Act. Penalties: Fine of ₹2,000 for first offence (₹4,000 for repeat), imprisonment up to 3 months, and vehicle impounding by traffic police. More critically, you bear UNLIMITED personal financial liability for any third-party injury, death, or property damage — which can run into crores of rupees in court awards."
+        },
+        {
+          "question": "My motor insurance expired 2 months ago. Can I still renew?",
+          "answer": "Yes, you can renew a lapsed policy, but the vehicle must undergo a physical inspection by SecureShield's surveyor before OD (own damage) coverage can be reinstated. The inspection confirms the current condition of the vehicle and documents any pre-existing damage (which will be excluded). TP cover can be reinstated immediately."
+        },
+        {
+          "question": "I forgot to renew my motor insurance on time. Did I lose my NCB?",
+          "answer": "NCB is protected for 90 days from the policy expiry date. If you renew within 90 days of expiry, your accumulated NCB is carried forward in full. If you renew after 90 days from expiry date, all accumulated NCB is forfeited and resets to 0%."
+        }
+      ]
+    }
+  ]
+}

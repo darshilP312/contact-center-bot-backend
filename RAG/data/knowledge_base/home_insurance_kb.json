@@ -1,0 +1,148 @@
+{
+  "domain": "home_insurance",
+  "version": "1.0",
+  "title": "Home Insurance Plans — Full FAQ & Comparison Knowledge Base",
+  "description": "Covers Home Protector Basic and Elite plan comparisons, building and contents coverage, jewellery, burglary, natural disasters, claim process, and all common customer questions.",
+  "sections": [
+    {
+      "id": "home_plan_comparison",
+      "title": "Home Insurance Plan Comparison — Basic vs Elite",
+      "content": "SecureShield offers two Home Protector plans: Basic (₹4,999/quarter) and Elite (₹8,499/quarter). Basic covers building up to ₹30 Lakhs and contents up to ₹5 Lakhs on Actual Cash Value (ACV / depreciated value) basis. No jewellery cover. Sneak theft not covered (forced entry required). Elite covers building up to ₹2 Crore and contents up to ₹25 Lakhs on New-for-Old Reinstatement Value (full replacement cost, no depreciation). Jewellery up to ₹10 Lakhs, Fine Art up to ₹5 Lakhs, Gadgets (worldwide) up to ₹3 Lakhs. Sneak theft covered. Domestic appliance breakdown (without accident) covered up to ₹1 Lakh/year. Third-party personal liability up to ₹25 Lakhs. Global contents cover for belongings abroad.",
+      "keywords": ["basic vs elite home", "home insurance comparison", "home protector", "which home insurance", "home insurance difference", "building insurance", "contents insurance"],
+      "faqs": [
+        {
+          "question": "What is the difference between Home Protector Basic and Elite?",
+          "answer": "Basic (₹4,999/qtr): Building up to ₹30L, contents up to ₹5L on depreciated value, no jewellery cover, forced-entry theft only, no appliance breakdown, temp accommodation ₹15,000. Elite (₹8,499/qtr): Building up to ₹2 Crore, contents up to ₹25L on New-for-Old basis (no depreciation), jewellery ₹10L, fine art ₹5L, gadgets ₹3L, sneak theft covered, appliance breakdown ₹1L/yr, personal liability ₹25L, global contents cover."
+        },
+        {
+          "question": "Is home insurance mandatory in India?",
+          "answer": "No, home insurance is not legally mandatory in India. However, banks granting home loans may require fire and allied perils insurance as a loan condition. It is strongly recommended to protect against fire, flood, theft, and other unexpected events."
+        },
+        {
+          "question": "Can I insure only the contents of my home (not the building)?",
+          "answer": "Yes. If you are a tenant, you can insure only the contents of your rented home under both Basic and Elite plans. The building structure is insured by the property owner separately. As a tenant, you are not eligible to insure the building."
+        },
+        {
+          "question": "What is the premium for Home Protector Basic and Elite?",
+          "answer": "Basic: ₹4,999 per quarter (₹19,996/year + 18% GST = ~₹23,595 total). Elite: ₹8,499 per quarter (₹33,996/year + 18% GST = ~₹40,115 total)."
+        }
+      ]
+    },
+    {
+      "id": "home_basic_coverage",
+      "title": "Home Protector Basic — Building and Contents Coverage",
+      "content": "Home Protector Basic covers: Building structure up to ₹30 Lakhs against fire, lightning, explosion, natural calamities (flood, cyclone, earthquake, landslide), riot, strike, malicious damage, aircraft impact, and water pipe burst. Contents (furniture, electronics, appliances, clothing) up to ₹5 Lakhs against the same perils plus forced-entry burglary/theft. Temporary accommodation up to ₹1,000/day (max ₹15,000) if home is uninhabitable. Emergency repairs up to ₹5,000. Sneak theft (without forced entry) is NOT covered. Jewellery, gold, cash, motor vehicles, business goods, and pets are excluded. Settlement on Actual Cash Value (ACV — depreciated market value) basis.",
+      "keywords": ["home basic coverage", "home protector basic", "building coverage", "contents coverage", "fire insurance home", "flood home insurance", "theft home insurance", "₹4999 home insurance"],
+      "faqs": [
+        {
+          "question": "What does Home Protector Basic cover?",
+          "answer": "Building structure up to ₹30L against: fire, lightning, explosion, flood, cyclone, earthquake, landslide, riot, and water pipe burst. Contents (electronics, furniture, appliances) up to ₹5L against same perils + forced-entry burglary. Temporary accommodation ₹15,000 total if home is uninhabitable. Emergency repairs ₹5,000. No jewellery cover."
+        },
+        {
+          "question": "Does Home Protector Basic cover earthquake damage?",
+          "answer": "Yes, Home Protector Basic covers earthquake damage (both fire and shock/structural damage resulting from earthquake) to the building structure and the contents inside."
+        },
+        {
+          "question": "Is my TV, fridge, and laptop covered under home insurance?",
+          "answer": "Yes, under Home Protector Basic, household electronics (TV, refrigerator, washing machine, AC, laptop used for personal purposes) are covered up to the contents sum insured of ₹5 Lakhs against fire, theft (with forced entry), flood, and other listed perils."
+        },
+        {
+          "question": "Is sneak theft covered in Home Protector Basic?",
+          "answer": "No. Home Protector Basic only covers theft involving forced entry (broken lock, damaged door or window, break-in evidence). Sneak theft — where there is no sign of forced entry — is NOT covered under Basic. You need Home Protector Elite for sneak theft coverage."
+        },
+        {
+          "question": "What is NOT covered under Home Protector Basic?",
+          "answer": "Excluded: Jewellery, gold, cash and currency, motor vehicles, business goods/stock, gradual wear and tear, construction defects, seepage and dampness, rodent/termite damage, property vacant for 60+ days, sneak theft, deliberate damage, and war/nuclear risks."
+        },
+        {
+          "question": "If my home is damaged by flood, will insurance cover repairs?",
+          "answer": "Yes, flood and inundation damage to the building structure and contents is covered under both Home Protector Basic and Elite. However, if the home is uninhabitable, you get temporary accommodation: Basic covers ₹1,000/day up to ₹15,000 total; Elite covers ₹3,000/day up to ₹60,000 total."
+        }
+      ]
+    },
+    {
+      "id": "home_elite_coverage",
+      "title": "Home Protector Elite — Premium Coverage Details",
+      "content": "Home Protector Elite covers all Basic perils plus: Building up to ₹2 Crore on full Reinstatement Value (New-for-Old, no depreciation). Accidental damage to building (pipe burst causing wall collapse, fixed glass breakage). Architects and surveyors fees for rebuild. Debris removal up to 5% of building sum insured. Rent loss up to ₹50,000/month for 6 months if property is rented out and becomes uninhabitable. Contents up to ₹25 Lakhs on New-for-Old basis. Jewellery and valuables up to ₹10 Lakhs. Fine art and collectibles up to ₹5 Lakhs. Gadget cover (mobile phones, tablets) up to ₹3 Lakhs worldwide. Musical instruments up to ₹2 Lakhs. Sports equipment up to ₹1 Lakh. Sneak theft covered (with FIR). Domestic appliance breakdown (without accident) up to ₹1 Lakh/year. Third-party personal liability up to ₹25 Lakhs. Data recovery up to ₹25,000. Global contents cover for portable items.",
+      "keywords": ["home elite coverage", "home protector elite", "jewellery insurance", "gadget cover home", "personal liability home", "new for old", "reinstatement value", "₹8499 home insurance", "appliance breakdown cover"],
+      "faqs": [
+        {
+          "question": "What does Home Protector Elite cover that Basic does not?",
+          "answer": "Elite adds: New-for-Old settlement (no depreciation on contents/building), Building up to ₹2 Crore, Contents up to ₹25L, Jewellery up to ₹10L, Fine art ₹5L, Gadgets ₹3L worldwide, Sneak theft, Appliance breakdown (₹1L/yr without accident), Personal liability ₹25L, Global contents cover, Data recovery ₹25K, Architects fees, Debris removal, Rent loss ₹50K/month, and Temp accommodation ₹60K."
+        },
+        {
+          "question": "Is jewellery covered under home insurance?",
+          "answer": "Yes, but only under Home Protector Elite — jewellery (gold, diamonds, precious stones, luxury watches) is covered up to ₹10,00,000 total. Individual items above ₹2,00,000 must be specifically declared and valued at the time of policy purchase. Jewellery is NOT covered under Home Protector Basic."
+        },
+        {
+          "question": "Is my mobile phone and laptop covered if stolen outside the house?",
+          "answer": "Under Home Protector Elite's Gadget Cover: Mobile phones, tablets, and laptops are covered for theft and accidental damage even outside the home — worldwide. Coverage: ₹1,50,000 per item, ₹3,00,000 total per year. Home Protector Basic only covers items inside the home."
+        },
+        {
+          "question": "What is Personal Liability cover in Home Protector Elite?",
+          "answer": "Personal Liability covers you if a guest, visitor, or domestic worker (maid, cook, driver) suffers bodily injury or property damage inside your home and holds you legally liable. The insurer pays legal defence costs and court-awarded compensation up to ₹25,00,000 per occurrence. Example: A guest falls from a broken staircase railing and sues you."
+        },
+        {
+          "question": "Does home insurance cover AC or fridge breakdown without any accident?",
+          "answer": "Only under Home Protector Elite — the Domestic Appliance Breakdown cover pays for repair or replacement of AC, refrigerator, washing machine, geyser, microwave, and TV up to ₹1,00,000 per year due to sudden electrical or mechanical breakdown — even without a fire, flood, or any insured peril. Applicable for appliances up to 7 years old."
+        },
+        {
+          "question": "Does Home Protector Elite cover rent loss?",
+          "answer": "Yes. If the insured property is rented out and becomes uninhabitable due to an insured peril (fire, flood, etc.), the loss of rental income is covered up to ₹50,000 per month for a maximum of 6 months. For owner-occupiers, alternative accommodation up to ₹2,00,000 total is covered."
+        },
+        {
+          "question": "What is the New-for-Old settlement in Home Protector Elite?",
+          "answer": "In Home Protector Elite, all contents and building repairs are settled on a Reinstatement Value (New-for-Old) basis — meaning you receive the cost to buy a brand-new equivalent item with no depreciation deducted for age or wear. In Basic, the settlement is on Actual Cash Value (ACV) = market value after depreciation."
+        }
+      ]
+    },
+    {
+      "id": "home_claims_process",
+      "title": "Home Insurance Claims Process and Documents",
+      "content": "Steps to file a home insurance claim: (1) For theft/burglary — File FIR at Police Station within 24 hours. (2) For fire — Contact fire brigade. (3) Notify SecureShield within 48 hours for Basic, 24 hours for Elite. (4) Do not alter or repair the damage site until surveyor inspects. Emergency repairs to prevent further damage (up to ₹5,000 Basic / ₹25,000 Elite) can be done immediately. (5) Surveyor is dispatched within 48–72 hours (Basic) or 24 hours (Elite). (6) Submit documents: claim form, FIR copy (if applicable), photographs, purchase bills of damaged items, repair estimates from contractors. (7) Settlement: Basic within 10–15 working days; Elite within 5–7 working days. Elite policyholders get a dedicated claims manager for assistance throughout the process.",
+      "keywords": ["home claim process", "how to claim home insurance", "home insurance documents", "FIR home insurance", "surveyor home", "claim settlement home"],
+      "faqs": [
+        {
+          "question": "How do I file a home insurance claim?",
+          "answer": "Step 1: For theft — file FIR within 24 hrs. For fire — call fire brigade. Step 2: Notify SecureShield within 48 hrs (Basic) or 24 hrs (Elite). Step 3: Do not disturb the damaged area until surveyor visits. Step 4: Submit claim form + FIR/fire brigade report + photos + purchase bills + repair estimates. Step 5: Settlement within 10–15 days (Basic) or 5–7 days (Elite) of complete documents."
+        },
+        {
+          "question": "What documents are needed for a home insurance claim?",
+          "answer": "Required: (1) Completed claim form, (2) Police FIR (for theft/burglary/riot), (3) Fire brigade report (for fire claims), (4) Photographs/video of damage, (5) Original purchase bills or invoices for damaged items, (6) Contractor repair/rebuild estimate, (7) Ownership or rental agreement proof, (8) Valuation certificates for jewellery/art (Elite only)."
+        },
+        {
+          "question": "Can I do emergency repairs before the surveyor visits?",
+          "answer": "Yes — you can and should do immediate emergency repairs to prevent further damage (e.g., stopping a burst water pipe, boarding up broken windows after burglary). Basic covers emergency repairs up to ₹5,000; Elite covers up to ₹25,000. Photograph all damage before beginning emergency repairs and inform SecureShield immediately."
+        },
+        {
+          "question": "If my neighbour's water tank overflows and damages my home, is it covered?",
+          "answer": "Yes, water damage from overflow or burst of tanks/pipes is covered under both Home Protector Basic and Elite for damage to building and contents. For recovery from your neighbour, you may also file a civil case (for Elite policyholders, personal liability cover can assist if the situation is reversed — you caused damage to a neighbour)."
+        }
+      ]
+    },
+    {
+      "id": "home_eligibility_terms",
+      "title": "Home Insurance Eligibility, Property Types, and Policy Terms",
+      "content": "Both Home Protector plans are available for: independent houses, flats/apartments (owner or tenant), row houses, and rented properties (contents only for tenants). Properties under construction are NOT eligible. Commercial premises are excluded. Building age: Basic up to 40 years; Elite up to 50 years (above 30 years may need inspection). Policy tenure is 1 year (renewable). Elite offers a 3-year policy option with 5% discount. Minimum building sum insured for Basic is ₹5 Lakhs; for Elite is ₹20 Lakhs. Free look period: Basic 15 days, Elite 30 days. Properties left vacant for more than 60 days (Basic) or 90 days (Elite) continuously may have cover suspended.",
+      "keywords": ["home insurance eligibility", "which property covered", "tenant home insurance", "vacant home insurance", "construction property insurance", "home insurance age of building", "minimum sum insured home"],
+      "faqs": [
+        {
+          "question": "Can tenants buy home insurance?",
+          "answer": "Yes, tenants can buy home insurance to protect their personal belongings (contents) inside a rented property. Tenants are NOT eligible to insure the building structure — only the property owner can insure the building."
+        },
+        {
+          "question": "Can I insure a property that is more than 30 years old?",
+          "answer": "Yes. Home Protector Basic covers buildings up to 40 years old; Elite up to 50 years. Properties older than 30 years under Elite may require a structural inspection before coverage is issued. Very old properties with visible structural damage may be subject to special underwriting."
+        },
+        {
+          "question": "If my home is vacant (e.g., I am travelling abroad), is it still covered?",
+          "answer": "Under Basic, if the property is left unoccupied for more than 60 consecutive days, cover may be suspended. Under Elite, this threshold is 90 consecutive days. Inform SecureShield if your property will be vacant for an extended period — a temporary vacancy notice may allow coverage to continue."
+        },
+        {
+          "question": "Is a property under construction covered?",
+          "answer": "No. Properties under construction or major renovation are not eligible for Home Protector Basic or Elite. Construction-phase insurance requires a separate 'Contractor's All Risk' (CAR) or 'Erection All Risk' (EAR) policy."
+        }
+      ]
+    }
+  ]
+}

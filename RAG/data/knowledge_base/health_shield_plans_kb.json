@@ -1,0 +1,180 @@
+{
+  "domain": "health_insurance",
+  "version": "2.0",
+  "title": "Health Shield Plans — Full FAQ & Comparison Knowledge Base",
+  "description": "Covers Health Shield Basic, Gold, and Premium plan comparisons, disease-specific coverage, premiums, waiting periods, renewal, claims, and all common customer questions.",
+  "sections": [
+    {
+      "id": "plan_comparison",
+      "title": "Health Shield Plan Comparison — Basic vs Gold vs Premium",
+      "content": "SecureShield offers three Health Shield plans: Basic (₹3,999/quarter), Gold (₹7,499/quarter), and Premium (₹14,999/quarter). Basic plan offers sum insured up to ₹3 Lakhs with 20% co-payment, room rent capped at ₹1,500/day, no maternity, and 36-month PED waiting period. Gold plan offers sum insured up to ₹10 Lakhs, no room rent sub-limit (Private AC Room), no co-payment, maternity included (after 24 months), and 24-month PED waiting period. Premium plan offers sum insured up to ₹1 Crore, Suite-level room, OPD coverage up to ₹15,000/year, mental health cover, international emergency cover up to ₹10 Lakhs, unlimited sum insured restoration, and shortest PED waiting period of only 12 months.",
+      "keywords": ["basic vs gold", "gold vs premium", "plan comparison", "which plan", "difference between plans", "health shield comparison"],
+      "faqs": [
+        {
+          "question": "What is the difference between Health Shield Basic, Gold, and Premium?",
+          "answer": "Basic (₹3,999/qtr): Sum insured up to ₹3L, 20% co-pay, room rent capped ₹1,500/day, no maternity, 36-month PED wait. Gold (₹7,499/qtr): Sum insured up to ₹10L, no co-pay, no room sub-limit, maternity included after 24 months, 24-month PED wait. Premium (₹14,999/qtr): Sum insured up to ₹1 Crore, Suite room, OPD cover, mental health, international emergency, unlimited restoration, 12-month PED wait."
+        },
+        {
+          "question": "Which Health Shield plan is best for a family?",
+          "answer": "For families, Health Shield Gold is the most popular — it covers the entire family on a floater basis up to ₹10 Lakhs with no room rent sub-limit, no co-pay, maternity benefit, and 540+ day care procedures. Health Shield Premium is ideal for high-income families needing ₹25–50 Lakhs coverage and OPD expenses."
+        },
+        {
+          "question": "Does Health Shield Basic have co-payment?",
+          "answer": "Yes, Health Shield Basic has a mandatory 20% co-payment on every claim. This means if the eligible claim is ₹1,00,000, you pay ₹20,000 and the insurer pays ₹80,000. Health Shield Gold and Premium have zero co-payment."
+        },
+        {
+          "question": "What is the premium for Health Shield Gold per year?",
+          "answer": "Health Shield Gold quarterly premium is ₹7,499. Annually that is approximately ₹29,996 (base). With 18% GST, the total annual premium is approximately ₹35,395."
+        },
+        {
+          "question": "What is the annual premium for Health Shield Premium?",
+          "answer": "Health Shield Premium quarterly premium is ₹14,999. Annually that is approximately ₹59,996 (base). With 18% GST, total annual premium is approximately ₹70,795."
+        }
+      ]
+    },
+    {
+      "id": "health_basic_coverage",
+      "title": "Health Shield Basic — Coverage Details",
+      "content": "Health Shield Basic covers inpatient hospitalization for at least 24 hours with room rent up to ₹1,500 per day, ICU up to ₹3,000 per day, and surgeon/specialist fees in full. Pre-hospitalization covered for 30 days and post-hospitalization for 60 days. Includes 200+ day care procedures (cataract, chemotherapy, dialysis, tonsillectomy). Emergency ambulance up to ₹1,500. Sum insured options: ₹2 Lakhs individual, ₹3 Lakhs family floater. Cumulative bonus 10% per claim-free year. No maternity cover. 36-month PED waiting period. 20% co-payment on all claims.",
+      "keywords": ["basic plan", "health shield basic", "₹3999", "basic coverage", "2 lakh", "3 lakh sum insured"],
+      "faqs": [
+        {
+          "question": "What does Health Shield Basic cover?",
+          "answer": "Health Shield Basic covers inpatient hospitalization (24+ hours), room rent up to ₹1,500/day, ICU up to ₹3,000/day, 30-day pre-hospitalization, 60-day post-hospitalization, 200+ day care procedures, and emergency ambulance up to ₹1,500. Sum insured: ₹2L (individual) or ₹3L (family floater). 20% co-pay applies."
+        },
+        {
+          "question": "Does Health Shield Basic cover dengue or malaria?",
+          "answer": "Yes, Health Shield Basic covers dengue, malaria, typhoid, chikungunya, and other infectious diseases if hospitalization is required. The 30-day initial waiting period applies, but accidental injury and emergency infections can be claimed from Day 1."
+        },
+        {
+          "question": "Is cancer covered under Health Shield Basic?",
+          "answer": "Yes, cancer (all malignant types) is covered under Health Shield Basic if hospitalization is required. Chemotherapy as a day care procedure is also covered in the 200+ day care list. However, the 36-month PED waiting period applies if cancer was pre-existing."
+        },
+        {
+          "question": "What is the waiting period for Health Shield Basic?",
+          "answer": "Health Shield Basic has a 30-day initial waiting period (no illness claims in first 30 days), 36-month pre-existing disease waiting period, and 24-month waiting period for specific ailments like cataract, hernia, kidney stones, gallstones, joint replacement, and piles."
+        }
+      ]
+    },
+    {
+      "id": "health_gold_coverage",
+      "title": "Health Shield Gold — Coverage Details",
+      "content": "Health Shield Gold is the mid-tier comprehensive plan with sum insured up to ₹10 Lakhs (family floater). No room rent sub-limit — full Private Single AC Room covered. ICU covered 100% with no cap. Includes 60-day pre-hospitalization, 90-day post-hospitalization, 540+ day care procedures, maternity (Normal delivery ₹75,000; C-section ₹1,00,000) after 24-month wait, newborn cover from Day 1 of birth, AYUSH treatment, 100% sum insured restoration once per year for a different illness, annual health check-up up to ₹2,500, and ambulance up to ₹5,000. Zero co-payment. 24-month PED waiting period.",
+      "keywords": ["gold plan", "health shield gold", "₹7499", "gold coverage", "5 lakh", "10 lakh", "maternity gold", "no co-pay"],
+      "faqs": [
+        {
+          "question": "What does Health Shield Gold cover?",
+          "answer": "Gold covers: inpatient hospitalization (Private AC Room, no sub-limit), ICU at 100%, 60-day pre-hospitalization, 90-day post-hospitalization, 540+ day care procedures, maternity (₹75K normal/₹1L C-section after 24 months), newborn from Day 1, AYUSH, ambulance ₹5,000, annual check-up, and 100% sum insured restoration. Zero co-pay, sum insured up to ₹10L."
+        },
+        {
+          "question": "Does Health Shield Gold cover heart attack?",
+          "answer": "Yes, Health Shield Gold fully covers heart attack (Acute Myocardial Infarction), bypass surgery (CABG), angioplasty, heart failure, and all cardiac conditions requiring hospitalization or day care. No room sub-limit, ICU charges at 100%."
+        },
+        {
+          "question": "What is the maternity benefit in Health Shield Gold?",
+          "answer": "Health Shield Gold covers maternity after a 24-month waiting period. Normal delivery is covered up to ₹75,000 and C-section up to ₹1,00,000. Pre-natal scans and consultations are included. Newborn baby is covered from Day 1 of birth up to 90 days. Applicable for up to 2 deliveries lifetime."
+        },
+        {
+          "question": "Does Health Shield Gold have co-payment?",
+          "answer": "No. Health Shield Gold has zero co-payment. The insurer pays 100% of all eligible hospitalization expenses within the sum insured. Only if you voluntarily opt for a room above Private AC Room category, the proportionate excess is your responsibility."
+        },
+        {
+          "question": "Is diabetes covered under Health Shield Gold?",
+          "answer": "Diabetes-related complications requiring hospitalization (like Diabetic Ketoacidosis, Hyperosmolar state, Diabetic foot infections) are fully covered after the 24-month PED waiting period. Routine OPD diabetes management (medicines, consultations without hospitalization) is not covered unless Gold OPD add-on is purchased."
+        },
+        {
+          "question": "Does Health Shield Gold cover kidney failure and dialysis?",
+          "answer": "Yes, Health Shield Gold covers Acute Kidney Injury, Chronic Kidney Disease, and haemodialysis (dialysis is covered as a day care procedure). Renal transplant hospitalization is also covered within the sum insured."
+        },
+        {
+          "question": "What is the sum insured restoration benefit in Health Shield Gold?",
+          "answer": "If the sum insured is fully exhausted in a policy year due to claims, it is automatically restored once per year at 100% — but only for a different illness or injury than the one that caused the original claim. This effectively doubles your protection for the same year."
+        }
+      ]
+    },
+    {
+      "id": "health_premium_coverage",
+      "title": "Health Shield Premium — Coverage Details",
+      "content": "Health Shield Premium is the flagship plan with sum insured up to ₹1 Crore. Features: Suite/Deluxe room with no sub-limit, ICU 100%, 90-day pre-hospitalization, 180-day post-hospitalization, OPD coverage up to ₹15,000/year, mental health and psychiatric hospitalization, 600+ day care procedures, maternity (₹1.5L normal, ₹2.5L C-section, 12-month wait), Critical Illness lump sum payout of ₹5 Lakhs on diagnosis, international emergency cover up to ₹10 Lakhs, air ambulance up to ₹3 Lakhs, unlimited sum insured restoration (even for same illness), annual health check-up up to ₹10,000, global second medical opinion once per year, HIV treatment covered, and dedicated relationship manager. Zero co-pay. 12-month PED waiting period.",
+      "keywords": ["premium plan", "health shield premium", "₹14999", "premium coverage", "1 crore", "OPD coverage", "mental health insurance", "critical illness"],
+      "faqs": [
+        {
+          "question": "What does Health Shield Premium cover that Gold does not?",
+          "answer": "Premium adds: OPD/outpatient coverage (₹15,000/year), mental health and psychiatric hospitalization, unlimited sum insured restoration (even for same illness), Critical Illness lump sum (₹5L on diagnosis), international emergency cover (₹10L), air ambulance (₹3L), HIV treatment, global medical second opinion, sum insured up to ₹1 Crore, and shortest PED waiting period of 12 months."
+        },
+        {
+          "question": "Does Health Shield Premium cover mental health or depression?",
+          "answer": "Yes, Health Shield Premium covers inpatient psychiatric hospitalization for Major Depressive Disorder, Bipolar Disorder, Schizophrenia, Severe OCD, Anorexia Nervosa, and PTSD requiring hospitalization. Additionally, 10 telepsychiatry sessions per year are covered under the OPD benefit."
+        },
+        {
+          "question": "What is the Critical Illness lump sum in Health Shield Premium?",
+          "answer": "On first confirmed diagnosis of 10 listed critical illnesses (Cancer, Heart Attack, CABG, Stroke, Major Organ Transplant, Kidney Failure, Multiple Sclerosis, Motor Neuron Disease, Aorta Graft Surgery, Aplastic Anaemia), a lump sum of ₹5,00,000 is paid — in addition to hospitalization reimbursement. Subject to 90-day survival post-diagnosis."
+        },
+        {
+          "question": "Does Health Shield Premium cover doctor consultations without hospitalization?",
+          "answer": "Yes, Health Shield Premium includes OPD (Outpatient) coverage up to ₹15,000 per year, covering doctor consultations (GP and specialists), prescribed diagnostic tests, pharmacy bills, and up to 20 physiotherapy sessions — without any hospitalization requirement."
+        },
+        {
+          "question": "Is HIV or AIDS treatment covered in any Health Shield plan?",
+          "answer": "HIV-related opportunistic infections (PCP pneumonia, CMV retinitis, toxoplasmosis) are covered under Health Shield Premium only. Health Shield Basic and Gold do not cover HIV/AIDS-related conditions."
+        },
+        {
+          "question": "Does Health Shield Premium cover treatment outside India?",
+          "answer": "Yes, Health Shield Premium includes International Emergency Cover up to ₹10,00,000 for emergency hospitalization outside India, valid if you are hospitalized within 30 days of departure from India. Planned medical tourism is not covered."
+        },
+        {
+          "question": "What is the sum insured restoration in Health Shield Premium?",
+          "answer": "Health Shield Premium offers unlimited sum insured restoration — it is restored as many times as needed in the policy year, even for the same illness. For example, a cancer patient can exhaust and restore the sum insured multiple times in the same year for ongoing treatment."
+        }
+      ]
+    },
+    {
+      "id": "health_renewal_portability",
+      "title": "Renewal, Portability, and Policy Management",
+      "content": "All Health Shield plans offer guaranteed lifetime renewal with no upper age exit limit. Policies can be ported from another insurer under IRDAI portability guidelines — existing waiting period credit is transferred to the new policy. The free-look period is 30 days from policy issuance during which the policy can be cancelled for a full refund. Premium is payable quarterly (every 3 months) via UPI, NetBanking, Credit Card, or Debit Card. Premium increases with age at renewal but is guaranteed renewable. Cumulative bonus (NCB) accumulated is protected and carried forward at renewal, but may reduce if a claim is made in the year.",
+      "keywords": ["renewal", "portability", "port policy", "free look", "cancel policy", "no claim bonus health", "lifetime renewal"],
+      "faqs": [
+        {
+          "question": "Can I renew Health Shield after 70 years of age?",
+          "answer": "Yes, all Health Shield plans offer guaranteed lifetime renewal with no upper age exit limit. You can renew your policy at any age as long as you have been continuously renewing since policy inception."
+        },
+        {
+          "question": "Can I port my existing health insurance to Health Shield?",
+          "answer": "Yes, you can port your existing health insurance to Health Shield under IRDAI portability guidelines. Your accumulated waiting period credit from the previous insurer is transferred, so you don't restart waiting periods from scratch."
+        },
+        {
+          "question": "What is the free-look period for Health Shield?",
+          "answer": "The free-look period is 30 days from the date of policy issuance. During this period, you can review the policy and cancel it for a full refund of premium if you are not satisfied with the terms."
+        },
+        {
+          "question": "When is health insurance premium due?",
+          "answer": "Health Shield premiums are payable quarterly (every 3 months). The quarterly amounts are: Basic ₹3,999, Gold ₹7,499, and Premium ₹14,999 (before GST of 18%)."
+        }
+      ]
+    },
+    {
+      "id": "health_claims_process",
+      "title": "Health Shield Claims — How to File and What to Submit",
+      "content": "For cashless claims: visit a network hospital, present your Health Shield card or policy number at the TPA insurance desk, submit pre-authorization request (48 hours before for planned, within 24 hours for emergency), and treatment begins without payment. For reimbursement: pay hospital bills, collect original discharge summary, itemized bills, prescriptions, and diagnostic reports, then submit within 30 days of discharge. Reimbursement is processed within 7–10 working days. The 24x7 claims helpline is available for assistance. Required documents include: filled claim form, policy number, discharge summary, itemized hospital bills, diagnostic reports, pharmacy bills with doctor's prescription, and Aadhaar/PAN copy for KYC.",
+      "keywords": ["how to claim", "claim process health", "claim documents", "cashless claim", "reimbursement claim", "health insurance claim form", "pre-authorization", "30 days submit"],
+      "faqs": [
+        {
+          "question": "How do I file a health insurance claim?",
+          "answer": "For cashless: visit a network hospital, present your policy at TPA desk, submit pre-authorization (48 hrs before planned admission or within 24 hrs of emergency). For reimbursement: pay bills, collect discharge summary, itemized bills, prescriptions, diagnostics, then submit to insurer within 30 days. Settlement within 7–10 working days."
+        },
+        {
+          "question": "What documents are needed for a health insurance claim?",
+          "answer": "Required documents: (1) Filled claim form, (2) Original discharge summary, (3) Itemized hospital bills and receipts, (4) All diagnostic/lab test reports, (5) Pharmacy bills with prescriptions, (6) Doctor's consultation notes, (7) Aadhaar or PAN copy for KYC."
+        },
+        {
+          "question": "Within how many days must I submit a health insurance reimbursement claim?",
+          "answer": "Reimbursement claim documents must be submitted within 30 days of hospital discharge for Health Shield Basic and Gold. Health Shield Premium allows 45 days for document submission."
+        },
+        {
+          "question": "What is the cashless claim process?",
+          "answer": "Go to a network hospital, show your Health Shield policy card at the TPA/insurance desk. For planned admission: submit pre-authorization at least 48 hours before admission. For emergency: get admitted immediately and inform insurer within 24 hours. The insurer directly settles the approved amount with the hospital — you pay nothing except the deductible (if any)."
+        }
+      ]
+    }
+  ]
+}

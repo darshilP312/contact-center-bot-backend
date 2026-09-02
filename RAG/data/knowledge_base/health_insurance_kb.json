@@ -1,0 +1,232 @@
+{
+  "domain": "health_insurance",
+  "version": "1.0",
+  "title": "Health Insurance Comprehensive Knowledge Base",
+  "description": "Complete reference guide for health insurance covering plan types, hospitalization coverage, cashless claims, room rent rules, maternity, AYUSH, pre-existing conditions, and frequently asked questions.",
+  "sections": [
+    {
+      "id": "health_plan_types",
+      "title": "Types of Health Insurance Plans",
+      "content": "Health insurance in India is available in several types: (1) Individual Health Plan covers a single person with a dedicated sum insured. (2) Family Floater Plan covers the entire family (self, spouse, and children) under a single sum insured that is shared by all members. This is more economical than individual policies for each member. (3) Group Health Insurance is provided by employers to employees as part of workplace benefits. (4) Senior Citizen Health Plan is specifically designed for individuals above 60 years with higher coverage limits for age-related conditions. (5) Critical Illness Plan provides a lump-sum payout upon diagnosis of specified critical illnesses like cancer, heart attack, or kidney failure.",
+      "keywords": ["health plan", "individual plan", "family floater", "group insurance", "senior citizen", "critical illness", "types"],
+      "faqs": [
+        {
+          "question": "What types of health insurance plans are available?",
+          "answer": "Main types include: Individual Health Plan (for one person), Family Floater (covers entire family under one sum insured), Group Health Insurance (employer-provided), Senior Citizen Plans (for age 60+), and Critical Illness Plans (lump-sum payout on diagnosis of serious diseases)."
+        },
+        {
+          "question": "What is a family floater health insurance plan?",
+          "answer": "A Family Floater plan covers the entire family (self, spouse, and dependent children) under a single sum insured. The total coverage amount is shared by all members. It is more cost-effective than buying separate individual policies for each family member."
+        },
+        {
+          "question": "Is health insurance mandatory in India?",
+          "answer": "Health insurance is not legally mandatory in India for individuals, but it is strongly recommended. Employers with 20+ employees are required to provide ESI (Employee State Insurance) for workers below a certain salary threshold."
+        }
+      ]
+    },
+    {
+      "id": "sum_insured_coverage",
+      "title": "Sum Insured and Coverage Limits",
+      "content": "Sum Insured is the maximum amount the health insurer will pay for medical expenses in a policy year. Health Gold plans typically offer sum insured ranging from INR 5 lakhs to INR 1 crore. The sum insured covers hospitalization expenses including room rent, surgeon fees, anesthesia charges, medicines, diagnostic tests, ICU charges, and post-hospitalization follow-up expenses. Some policies offer Restoration Benefit which restores the full sum insured if it is exhausted during the policy year, available for a different illness. Super Top-Up plans provide additional coverage beyond the base policy at affordable premiums with a deductible threshold.",
+      "keywords": ["sum insured", "coverage limit", "how much covered", "maximum amount", "restoration", "super top-up"],
+      "faqs": [
+        {
+          "question": "What is sum insured in health insurance?",
+          "answer": "Sum Insured is the maximum amount your health insurer will pay for medical expenses in a policy year. It covers hospitalization costs including room rent, surgeon fees, medicines, diagnostics, ICU charges, and follow-up expenses."
+        },
+        {
+          "question": "What is restoration benefit in health insurance?",
+          "answer": "Restoration Benefit restores your full sum insured if it gets exhausted during the policy year, but only for a different illness from the one that consumed the original sum insured. This effectively doubles your coverage."
+        }
+      ]
+    },
+    {
+      "id": "room_rent_coverage",
+      "title": "Room Rent Coverage and Hospital Room Categories",
+      "content": "Health Gold Insurance covers room rent up to Single Private AC Room category with no sub-limits or percentage capping on room charges. This means you can choose a Single Private AC Room during hospitalization and the full room rent will be covered without any deduction. ICU (Intensive Care Unit) charges are covered at 100% with no sub-limits or capping — there is no daily limit on ICU room rent. Some policies have room rent sub-limits (e.g., 1% or 2% of sum insured per day) which can significantly increase your out-of-pocket expenses. Health Gold has eliminated all such sub-limits for premium members. If you choose a room category higher than Single Private AC (e.g., Suite or Deluxe Suite), the excess room rent and proportionate increase in all other charges will be borne by the insured.",
+      "keywords": ["room rent", "hospital room", "single room", "AC room", "ICU", "room charges", "sub-limit", "bed", "bed charges"],
+      "faqs": [
+        {
+          "question": "What type of hospital room is covered under health insurance?",
+          "answer": "Health Gold Insurance covers up to a Single Private AC Room with no sub-limits or capping on room rent. ICU charges are also covered at 100% without any daily limit. If you choose a higher room category like Suite or Deluxe, the excess will be paid from your pocket."
+        },
+        {
+          "question": "Is there a limit on ICU charges in health insurance?",
+          "answer": "Under Health Gold, ICU charges are covered at 100% with no sub-limits or daily capping. There is no maximum daily limit on ICU room rent, which is a significant advantage over policies that cap ICU charges."
+        },
+        {
+          "question": "What is room rent sub-limit?",
+          "answer": "Room rent sub-limit is a cap on daily room charges (e.g., 1-2% of sum insured per day). If actual room rent exceeds this limit, all other claim components (surgeon fees, medicines, etc.) are proportionally reduced. Health Gold has NO sub-limits, giving you full coverage."
+        },
+        {
+          "question": "What hospital bed category is covered?",
+          "answer": "Health Gold covers Single Private AC Room bed category. You are entitled to a private air-conditioned room during hospitalization. ICU beds have no daily charge limit. Choosing a ward or shared room would be entirely covered."
+        }
+      ]
+    },
+    {
+      "id": "cashless_hospitalization",
+      "title": "Cashless Hospitalization Process",
+      "content": "Cashless hospitalization means the insurer pays the hospital directly for your treatment — you do not pay upfront (except any deductible or non-covered items). The process differs for planned and emergency hospitalization. For Planned Hospitalization: Submit a Pre-Authorization Request to the hospital's TPA (Third Party Administrator) desk at least 48 hours before admission. The TPA verifies your policy, coverage, and forwards the request to the insurer. Approval is typically received within 2-4 hours. For Emergency Hospitalization: Get admitted immediately and inform the insurer within 24 hours. The hospital's TPA desk will process the cashless authorization. Retroactive approval is given for genuine emergencies. Health Gold provides 100% cashless treatment across 7,500+ network hospitals across India.",
+      "keywords": ["cashless", "cashless hospitalization", "network hospital", "TPA", "pre-authorization", "emergency", "planned hospitalization", "direct settlement"],
+      "faqs": [
+        {
+          "question": "How does cashless hospitalization work?",
+          "answer": "In cashless hospitalization, the insurer pays the hospital directly. For planned admissions, submit pre-authorization 48 hours before admission at the hospital's TPA desk. For emergencies, get admitted immediately and inform the insurer within 24 hours. Health Gold covers 100% cashless treatment at 7,500+ network hospitals."
+        },
+        {
+          "question": "What is pre-authorization for health insurance?",
+          "answer": "Pre-authorization is a request submitted to your insurer (via the hospital TPA desk) at least 48 hours before a planned hospitalization. The insurer verifies your policy coverage and approves the cashless treatment. Approval is typically received within 2-4 hours."
+        },
+        {
+          "question": "What if I go to a non-network hospital?",
+          "answer": "If you go to a non-network hospital, cashless facility is not available. You must pay the hospital bill upfront and then file a reimbursement claim with original bills, discharge summary, and diagnostic reports. The insurer will reimburse the approved amount within 7-10 working days."
+        },
+        {
+          "question": "How many network hospitals are available?",
+          "answer": "Health Gold provides cashless treatment access at over 7,500 network hospitals across India. You can find the nearest network hospital through the insurer's website, app, or by calling the helpline."
+        }
+      ]
+    },
+    {
+      "id": "pre_post_hospitalization",
+      "title": "Pre-Hospitalization and Post-Hospitalization Coverage",
+      "content": "Health insurance covers medical expenses incurred before and after hospitalization. Pre-Hospitalization Coverage: Medical expenses incurred up to 60 days before the date of hospitalization are covered. This includes doctor consultations, diagnostic tests (blood tests, X-rays, MRI, CT scans), and prescribed medicines taken before admission. Post-Hospitalization Coverage: Medical expenses incurred up to 90 days after discharge are covered. This includes follow-up doctor visits, medicines prescribed at discharge, physiotherapy sessions, diagnostic tests for recovery monitoring, and rehabilitation costs. Both pre and post hospitalization expenses must be related to the same illness or condition for which hospitalization occurred.",
+      "keywords": ["pre-hospitalization", "post-hospitalization", "before hospital", "after hospital", "follow-up", "60 days", "90 days", "discharge"],
+      "faqs": [
+        {
+          "question": "Are expenses before hospitalization covered?",
+          "answer": "Yes, pre-hospitalization expenses incurred up to 60 days before admission are covered. This includes doctor consultations, diagnostic tests, and prescribed medicines related to the condition requiring hospitalization."
+        },
+        {
+          "question": "Are follow-up expenses after discharge covered?",
+          "answer": "Yes, post-hospitalization expenses incurred up to 90 days after discharge are covered. This includes follow-up consultations, prescribed medicines, diagnostic tests, and physiotherapy related to the hospitalized condition."
+        }
+      ]
+    },
+    {
+      "id": "daycare_procedures",
+      "title": "Day Care Procedures Coverage",
+      "content": "Day care procedures are medical treatments that require hospitalization for less than 24 hours due to advances in medical technology. Health Gold covers over 500 day care procedures including cataract surgery, chemotherapy sessions, dialysis, lithotripsy (kidney stone removal), angioplasty, arthroscopy, tonsillectomy, dental surgery under general anesthesia, radiation therapy, and many more. These procedures previously required multi-day hospitalization but can now be completed within a few hours. Full coverage is provided for day care procedures without requiring the traditional 24-hour hospitalization minimum.",
+      "keywords": ["day care", "daycare procedure", "same day discharge", "less than 24 hours", "cataract", "dialysis", "chemotherapy", "outpatient surgery"],
+      "faqs": [
+        {
+          "question": "What are day care procedures in health insurance?",
+          "answer": "Day care procedures are medical treatments completed in less than 24 hours. Health Gold covers 500+ day care procedures including cataract surgery, dialysis, chemotherapy, lithotripsy, angioplasty, and more — without requiring the 24-hour hospitalization minimum."
+        },
+        {
+          "question": "Is cataract surgery covered under health insurance?",
+          "answer": "Yes, cataract surgery is covered as a day care procedure under Health Gold. The full cost of surgery, lens, and follow-up is covered without requiring 24-hour hospitalization."
+        }
+      ]
+    },
+    {
+      "id": "ayush_treatment",
+      "title": "AYUSH Treatment Coverage",
+      "content": "AYUSH stands for Ayurveda, Yoga, Unani, Siddha, and Homeopathy. Health Gold insurance covers AYUSH treatments when taken at a recognized AYUSH hospital registered under the government. Coverage includes hospitalization for AYUSH treatments, cost of AYUSH medicines, practitioner fees, and diagnostic tests. The treatment must require hospitalization and be taken at a government-recognized AYUSH center. Outpatient AYUSH consultations are typically not covered unless the policy specifically includes OPD coverage.",
+      "keywords": ["AYUSH", "ayurveda", "yoga", "unani", "siddha", "homeopathy", "alternative medicine", "traditional treatment"],
+      "faqs": [
+        {
+          "question": "Does health insurance cover Ayurvedic treatment?",
+          "answer": "Yes, Health Gold covers AYUSH treatments (Ayurveda, Yoga, Unani, Siddha, Homeopathy) when taken at a government-recognized AYUSH hospital requiring hospitalization. This includes treatment costs, medicines, and diagnostic tests."
+        }
+      ]
+    },
+    {
+      "id": "maternity_coverage",
+      "title": "Maternity and Newborn Coverage",
+      "content": "Health Gold includes maternity coverage after a waiting period (typically 2-3 years from policy inception). Coverage includes normal delivery expenses, caesarean section (C-section) expenses, pre-natal and post-natal expenses (check-ups, ultrasounds, and medicines) for up to 60 days before and 90 days after delivery, newborn baby coverage from birth for the first 90 days (vaccinations, congenital conditions, and neonatal ICU), and complications during pregnancy including ectopic pregnancy and miscarriage. The sum insured for maternity is typically a sub-limit of the overall sum insured (e.g., INR 50,000 to INR 1,00,000 for delivery expenses).",
+      "keywords": ["maternity", "pregnancy", "delivery", "newborn", "C-section", "caesarean", "baby cover", "pre-natal", "post-natal"],
+      "faqs": [
+        {
+          "question": "Does health insurance cover maternity and delivery?",
+          "answer": "Yes, Health Gold covers maternity after a waiting period of 2-3 years. It includes normal delivery, C-section, pre-natal and post-natal expenses, and newborn baby coverage for the first 90 days. Maternity coverage is typically subject to a sub-limit."
+        },
+        {
+          "question": "Is newborn baby covered under health insurance?",
+          "answer": "Yes, Health Gold covers the newborn baby from birth for the first 90 days. This includes vaccinations, treatment for congenital conditions, and neonatal ICU charges if required."
+        }
+      ]
+    },
+    {
+      "id": "waiting_periods",
+      "title": "Waiting Periods and Pre-Existing Conditions",
+      "content": "Health insurance policies have several waiting periods: (1) Initial Waiting Period — 30 days from policy start during which no claims are allowed (except accidents). (2) Pre-Existing Disease (PED) Waiting Period — Conditions that existed before buying the policy are covered only after a waiting period of 2-4 years (typically 2 years for Health Gold). Pre-existing conditions include diabetes, hypertension, thyroid disorders, asthma, and heart conditions. (3) Specific Disease Waiting Period — Certain conditions like hernia, joint replacement, cataract, kidney stones, and piles have a waiting period of 1-2 years even if they are new (not pre-existing). (4) Maternity Waiting Period — Typically 2-3 years before maternity benefits are activated.",
+      "keywords": ["waiting period", "pre-existing", "PED", "pre-existing disease", "initial waiting", "30 days", "2 years", "4 years", "existing condition"],
+      "faqs": [
+        {
+          "question": "What is the waiting period for pre-existing diseases?",
+          "answer": "Pre-existing conditions (like diabetes, hypertension, thyroid, asthma) are covered only after a waiting period, typically 2 years for Health Gold policies. During this period, claims related to pre-existing conditions are not payable."
+        },
+        {
+          "question": "What is the initial waiting period in health insurance?",
+          "answer": "The initial waiting period is 30 days from policy start during which no claims are allowed, except for claims arising from accidents. After 30 days, the policy becomes active for all covered conditions (subject to other waiting periods)."
+        },
+        {
+          "question": "Are pre-existing diseases covered?",
+          "answer": "Yes, pre-existing conditions ARE covered but only after a waiting period of 2-4 years (2 years for Health Gold). Once the waiting period is over, all claims related to pre-existing conditions are fully covered."
+        }
+      ]
+    },
+    {
+      "id": "ambulance_coverage",
+      "title": "Ambulance Coverage",
+      "content": "Health Gold provides ambulance coverage up to INR 5,000 per hospitalization event. This covers the cost of transporting the insured person to the hospital in an emergency via ambulance. Both road ambulance and air ambulance (in critical cases, subject to insurer approval) expenses are considered. The ambulance must be used for transporting the patient to the hospital for a covered hospitalization event. Ambulance charges for non-hospitalization or outpatient visits are not covered.",
+      "keywords": ["ambulance", "ambulance cover", "emergency transport", "ambulance charges", "hospital transport"],
+      "faqs": [
+        {
+          "question": "Does health insurance cover ambulance charges?",
+          "answer": "Yes, Health Gold covers ambulance expenses up to INR 5,000 per hospitalization event for emergency transport to the hospital. This applies to road ambulance services for covered hospitalization events."
+        }
+      ]
+    },
+    {
+      "id": "reimbursement_process",
+      "title": "Health Insurance Reimbursement Claim Process",
+      "content": "For non-network hospitals or when cashless facility is not used, the reimbursement claim process is: Step 1 — Inform the insurer within 24 hours of hospitalization (or as soon as reasonably possible for emergencies). Step 2 — Pay the hospital bill and collect all original documents. Step 3 — Submit the following documents within 30 days of discharge: (a) Duly filled claim form, (b) Original discharge summary, (c) Original itemized hospital bills, (d) All diagnostic and lab test reports, (e) Pharmacy bills with prescriptions, (f) Doctor's prescription and consultation notes, (g) Pre-authorization letter (if applicable), (h) KYC documents (Aadhaar/PAN copy). Step 4 — The insurer's claims team reviews the documents and the medical case. Step 5 — Approved reimbursement amount is transferred to your registered bank account within 7-10 working days after document verification.",
+      "keywords": ["reimbursement", "claim process", "documents required", "claim form", "discharge summary", "hospital bill", "how to claim"],
+      "faqs": [
+        {
+          "question": "How do I file a reimbursement claim?",
+          "answer": "Pay the hospital bill, collect all original documents (discharge summary, bills, prescriptions, lab reports), fill the claim form, and submit everything to the insurer within 30 days of discharge. The approved amount is transferred to your bank within 7-10 working days."
+        },
+        {
+          "question": "What documents are needed for health insurance reimbursement?",
+          "answer": "You need: Filled claim form, original discharge summary, itemized hospital bills, diagnostic/lab reports, pharmacy bills with prescriptions, doctor's consultation notes, and KYC documents (Aadhaar/PAN copy)."
+        }
+      ]
+    },
+    {
+      "id": "health_exclusions",
+      "title": "Health Insurance Exclusions — What Is NOT Covered",
+      "content": "Health insurance policies exclude: (1) Cosmetic and plastic surgery (unless medically necessary due to accident). (2) Dental treatment (unless requiring hospitalization). (3) Congenital diseases diagnosed after age 16. (4) Self-inflicted injuries and attempted suicide. (5) Injuries from participation in hazardous activities or adventure sports (unless covered by a rider). (6) Treatment for substance abuse and addiction (alcohol, drugs). (7) HIV/AIDS related treatment (some policies may cover). (8) Infertility treatment and assisted reproduction (IVF, IUI). (9) Spectacles, contact lenses, and hearing aids. (10) Outpatient treatment (unless OPD cover is purchased). (11) War, nuclear incidents, and terrorism. (12) Vaccination (unless for a covered hospitalization). (13) Weight management and obesity treatment (unless medically necessary). (14) Treatment taken outside India (unless international coverage is purchased).",
+      "keywords": ["exclusions", "not covered", "health exclusions", "dental", "cosmetic", "infertility", "what is not covered"],
+      "faqs": [
+        {
+          "question": "What is not covered under health insurance?",
+          "answer": "Exclusions include: cosmetic surgery, dental treatment (without hospitalization), self-inflicted injuries, hazardous sports, substance abuse treatment, infertility treatments (IVF/IUI), spectacles, outpatient treatment, and treatment outside India."
+        },
+        {
+          "question": "Is dental treatment covered under health insurance?",
+          "answer": "Regular dental treatment (fillings, cleaning, root canal) is NOT covered unless it requires hospitalization. Dental surgery requiring hospitalization under general anesthesia may be covered as a day care procedure."
+        }
+      ]
+    },
+    {
+      "id": "copay_deductible",
+      "title": "Copay and Deductible in Health Insurance",
+      "content": "Copay is a fixed percentage of the claim amount that you must pay from your pocket. For example, with a 10% copay on a INR 1,00,000 claim, you pay INR 10,000 and the insurer pays INR 90,000. Copay may apply to all claims or only to senior citizens (age-based copay). Deductible in health insurance is the threshold amount below which the insurer does not pay. For example, with a INR 25,000 deductible, you must pay the first INR 25,000 of any claim, and the insurer pays the remainder. Super Top-Up plans typically have a deductible equal to your base policy sum insured. Health Gold has ZERO copay for all age groups and no deductible on standard claims.",
+      "keywords": ["copay", "co-pay", "deductible", "out of pocket", "copayment", "self contribution"],
+      "faqs": [
+        {
+          "question": "What is copay in health insurance?",
+          "answer": "Copay is a fixed percentage of the claim amount you pay from your pocket. For example, 10% copay on a INR 1,00,000 claim means you pay INR 10,000. Health Gold has ZERO copay for all age groups."
+        },
+        {
+          "question": "Does Health Gold have any deductible or copay?",
+          "answer": "No, Health Gold has zero copay for all age groups and no deductible on standard claims. The insurer covers 100% of eligible expenses."
+        }
+      ]
+    }
+  ]
+}
